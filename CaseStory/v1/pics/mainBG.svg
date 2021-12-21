@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="530" height="399" viewBox="0 0 530 399">
+  <defs>
+    <filter id="left_page">
+      <feOffset dx="-33" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-opacity="0.169" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="right_page">
+      <feOffset dx="33" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-opacity="0.169" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Open_Book" transform="translate(-1332 -296)">
+    <g id="Main_Page" transform="translate(1332 296)" fill="#e1b043" stroke="#be8f3c" stroke-width="1">
+      <rect width="530" height="399" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="529" height="398" rx="4.5" fill="none"/>
+    </g>
+    <g id="Left_Page-2" data-name="Left_Page">
+      <rect id="left_middle_line" width="1" height="399" transform="translate(1595.9 296)" fill="#818181"/>
+      <g data-type="innerShadowGroup">
+        <path id="left_page-3" data-name="left_page" d="M16,7.5,264,0a1,1,0,0,1,1,1V398a1,1,0,0,1-1,1L11,391c-.552,0,0-6.448,0-7L16,18.5C16,17.948,15.448,7.5,16,7.5Z" transform="translate(1330.896 296)" fill="#fff7e8"/>
+        <g transform="matrix(1, 0, 0, 1, 1332, 296)" filter="url(#left_page)">
+          <path id="left_page-4" data-name="left_page" d="M16,7.5,264,0a1,1,0,0,1,1,1V398a1,1,0,0,1-1,1L11,391c-.552,0,0-6.448,0-7L16,18.5C16,17.948,15.448,7.5,16,7.5Z" transform="translate(-1.1)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="left" transform="translate(39 -312)">
+        <circle id="Ellipse_11161" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-2" data-name="left" transform="translate(39 -288)">
+        <circle id="Ellipse_11161-2" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-2" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-3" data-name="left" transform="translate(39 -264)">
+        <circle id="Ellipse_11161-3" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-3" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-4" data-name="left" transform="translate(39 -240)">
+        <circle id="Ellipse_11161-4" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-4" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-5" data-name="left" transform="translate(39 -216)">
+        <circle id="Ellipse_11161-5" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-5" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-6" data-name="left" transform="translate(39 -192)">
+        <circle id="Ellipse_11161-6" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-6" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-7" data-name="left" transform="translate(39 -168)">
+        <circle id="Ellipse_11161-7" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-7" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-8" data-name="left" transform="translate(39 -144)">
+        <circle id="Ellipse_11161-8" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-8" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-9" data-name="left" transform="translate(39 -120)">
+        <circle id="Ellipse_11161-9" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-9" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-10" data-name="left" transform="translate(39 -96)">
+        <circle id="Ellipse_11161-10" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-10" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-11" data-name="left" transform="translate(39 -72)">
+        <circle id="Ellipse_11161-11" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-11" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-12" data-name="left" transform="translate(39 -48)">
+        <circle id="Ellipse_11161-12" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-12" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-13" data-name="left" transform="translate(39 -24)">
+        <circle id="Ellipse_11161-13" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-13" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-14" data-name="left" transform="translate(39)">
+        <circle id="Ellipse_11161-14" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-14" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-15" data-name="left" transform="translate(39 24)">
+        <circle id="Ellipse_11161-15" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-15" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="left-16" data-name="left" transform="translate(39 48)">
+        <circle id="Ellipse_11161-16" data-name="Ellipse 11161" cx="5" cy="5" r="5" transform="translate(1543 623)" fill="#53514c"/>
+        <path id="Path_6145-16" data-name="Path 6145" d="M1138,2829h9.922" transform="translate(409.99 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Right_Page-2" data-name="Right_Page">
+      <rect id="right_middle_line" width="1" height="399" transform="translate(1596.88 296)" fill="#818181"/>
+      <g data-type="innerShadowGroup">
+        <path id="right_page-3" data-name="right_page" d="M259.755,7.5,11.755,0a1,1,0,0,0-1,1V398a1,1,0,0,0,1,1l253-8c.552,0,0-6.448,0-7l-5-365.5C259.755,17.948,260.307,7.5,259.755,7.5Z" transform="translate(1587.135 296)" fill="#fff7e8"/>
+        <g transform="matrix(1, 0, 0, 1, 1332, 296)" filter="url(#right_page)">
+          <path id="right_page-4" data-name="right_page" d="M259.755,7.5,11.755,0a1,1,0,0,0-1,1V398a1,1,0,0,0,1,1l253-8c.552,0,0-6.448,0-7l-5-365.5C259.755,17.948,260.307,7.5,259.755,7.5Z" transform="translate(255.14)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="right" transform="translate(39 -312)">
+        <circle id="Ellipse_11162" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-2" data-name="right" transform="translate(39 -288)">
+        <circle id="Ellipse_11162-2" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-2" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-3" data-name="right" transform="translate(39 -264)">
+        <circle id="Ellipse_11162-3" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-3" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-4" data-name="right" transform="translate(39 -240)">
+        <circle id="Ellipse_11162-4" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-4" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-5" data-name="right" transform="translate(39 -216)">
+        <circle id="Ellipse_11162-5" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-5" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-6" data-name="right" transform="translate(39 -192)">
+        <circle id="Ellipse_11162-6" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-6" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-7" data-name="right" transform="translate(39 -168)">
+        <circle id="Ellipse_11162-7" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-7" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-8" data-name="right" transform="translate(39 -144)">
+        <circle id="Ellipse_11162-8" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-8" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-9" data-name="right" transform="translate(39 -120)">
+        <circle id="Ellipse_11162-9" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-9" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-10" data-name="right" transform="translate(39 -96)">
+        <circle id="Ellipse_11162-10" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-10" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-11" data-name="right" transform="translate(39 -72)">
+        <circle id="Ellipse_11162-11" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-11" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-12" data-name="right" transform="translate(39 -48)">
+        <circle id="Ellipse_11162-12" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-12" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-13" data-name="right" transform="translate(39 -24)">
+        <circle id="Ellipse_11162-13" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-13" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-14" data-name="right" transform="translate(39)">
+        <circle id="Ellipse_11162-14" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-14" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-15" data-name="right" transform="translate(39 24)">
+        <circle id="Ellipse_11162-15" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-15" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+      <g id="right-16" data-name="right" transform="translate(39 48)">
+        <circle id="Ellipse_11162-16" data-name="Ellipse 11162" cx="5" cy="5" r="5" transform="translate(1563 623)" fill="#53514c"/>
+        <path id="Path_9223-16" data-name="Path 9223" d="M1138,2829h9.922" transform="translate(419.88 -2201)" fill="none" stroke="#53514c" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

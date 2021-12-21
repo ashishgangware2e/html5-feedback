@@ -1,0 +1,530 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  user-select: none;
+}
+.output-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  background: #f5f5f5;
+  width: 93%;
+  margin: 30px auto;
+}
+
+.warpermain {
+  width: 90%;
+  height: 560px;
+  position: relative;
+  background: #ffffff;
+  margin: 0px auto;
+  font-family: Arial;
+  font-size: 12px;
+}
+.headingTop {
+  display: none;
+}
+.agree-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.title-info {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+}
+
+.warpermain .droggAbleBlock {
+  position: absolute;
+  top: 0px;
+  float: left;
+  height: 80px;
+  /*border:1px solid green;*/
+}
+
+.warpermain .dragThis {
+  z-index: 20 !important;
+  position: absolute;
+  margin: 0px;
+  text-align: center;
+  top: 230px;
+  left: -30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: url(../images/arrowLine.png) bottom no-repeat;
+}
+
+.warpermain .dropHere {
+  z-index: 15 !important;
+  width: 100%;
+  top: 99px;
+  height: 416px;
+  position: relative;
+  padding: 0px;
+}
+
+.warpermain .dropHere .midShape {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.warpermain .dropHere .scaleLine {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  background: url(../images/scalBar_bg.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.warpermain .dropHere .LeftShape {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  background: url(../images/shape_left.png) right no-repeat;
+  left: 1px;
+  z-index: 2;
+}
+
+.warpermain .dropHere .RightShape {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  background: url(../images/shape_right.png) left no-repeat;
+  right: 0px;
+  z-index: 3;
+}
+
+.warpermain .ScalBlock {
+  z-index: 15 !important;
+  top: 506px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  padding: 0px;
+  text-align: center;
+}
+
+/*.warpermain .ScalBlock span{display:inline-block; padding-top:23px;}*/
+
+.warpermain .dragThis .imgText {
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  display: none;
+}
+
+.leftScalltext {
+  float: left;
+  line-height: 60px;
+}
+
+.rightScalltext {
+  float: right;
+  line-height: 60px;
+}
+
+.warpermain .dragThis .listDiv {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  /* border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px; */
+  /* border: 1px #DCDCDC dotted; */
+  overflow: hidden;
+  display: table;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltipval {
+  position: absolute;
+  top: 65px;
+  left: 28px;
+  width: 20px;
+  height: 17px;
+  color: #000;
+  z-index: 222;
+  background: #ffffff;
+  border: 1px solid #3b3434;
+  display: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-size: 13px;
+  padding-top: 3px;
+}
+
+.warpermain .dragThis .listDiv span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.warpermain .dragThis .listDiv img {
+  width: 100%;
+  height: 100%;
+}
+
+.borderShadow {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.clearAll {
+  clear: both;
+}
+
+.dropFix {
+  height: 485px;
+}
+
+.dropHint {
+  width: 100px;
+  height: 95px;
+  background: url(../images/dropHint.png) no-repeat;
+  position: absolute;
+  left: 115px;
+  top: 217px;
+}
+
+.dropHintText {
+  width: 140px;
+  background: #dcdcdc;
+  position: absolute;
+  left: 95px;
+  top: 115px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #818080;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(207, 207, 207, 1);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(207, 207, 207, 1);
+  box-shadow: 0px 0px 6px 1px rgba(207, 207, 207, 1);
+}
+
+.scalingLabel {
+  position: relative;
+  width: 100%;
+  margin: 4px auto 0px auto;
+}
+
+.scalingLabel span {
+  width: 20px;
+  white-space: nowrap;
+  text-align: left;
+  position: absolute;
+}
+
+.scalingLabel span i {
+  width: 100%;
+  float: left;
+  font-style: normal;
+  margin-left: -3px;
+  color: #999;
+  line-height: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.scalingLabel span e {
+  width: 100%;
+  float: left;
+  font-style: normal;
+  font-size: 8px;
+  color: #999;
+  line-height: 10px;
+}
+
+.headingTop {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.headingOrg {
+  width: 80%;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  font-size: 16px;
+  color: #484848;
+  padding: 5px 10px;
+  background: #f4f4f4;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 600;
+}
+
+.headingGra {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 10px;
+  background: #f4f4f4;
+  color: #aeaeae;
+}
+
+/*.scalingLabelleft{position:absolute; left:0px; width:10%;  top:5px;}
+.scalingLabelright{position:absolute; top:5px; width:10%;  right:0px;}*/
+
+p {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.header-nav {
+  /* display: inline-block; */
+  display: none;
+  width: 100%;
+}
+
+.back-nav {
+  float: right;
+  cursor: pointer;
+}
+
+.back-nav a {
+  text-decoration: none;
+  color: #6d5f24;
+}
+
+.back-nav {
+  display: inline-block;
+  border: 1px solid #c9ae34;
+  color: #705d07;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: calibri;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  background-image: linear-gradient(to top, #fce374, #fcdf5b);
+  background-color: #fce374;
+}
+
+.back-nav:hover,
+.back-nav:active {
+  border: 1px solid #967d09;
+  color: #705d07;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  background-color: #fcdf5b;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+}
+
+/* Desktops and laptops ----------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+  .warpermain .dropHere .scaleLine {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background: url(../images/sm.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+  .headingOrg,
+  .headingGra {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+  .warpermain .dropHere .scaleLine {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background: url(../images/sm.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+  .headingOrg,
+  .headingGra {
+    width: 100%;
+  }
+  .dropHintText {
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .warpermain .dragThis {
+    z-index: 20 !important;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+    top: 230px;
+    left: -35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: url(../images/arrowLine.png) bottom no-repeat;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+  .headingOrg,
+  .headingGra {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+  .headingOrg,
+  .headingGra {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .warpermain .dragThis .listDiv span {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -o-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .leftScalltext,
+  .rightScalltext {
+    text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -webkit-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -moz-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -o-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+    -ms-text-shadow: 0px 0px 2px rgba(243, 243, 243, 1);
+  }
+  .headingOrg,
+  .headingGra {
+    width: 100%;
+  }
+}

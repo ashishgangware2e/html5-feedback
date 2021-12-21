@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Find</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/image-find.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/image-find.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imageLens.min.js"></script>
+    <script type="text/javascript" src="js/touch.min.js"></script>
+
+    <script>
+      var nSingleSelection = 0;
+      var dislikeStr = "None of these"; //like/dislike text
+      var dislikeStr2 = "Magnifier";
+      var magnifier_display = "true";
+      var noneValue = 99;
+      var NON = "1";
+      //var imgrate =  'images/Display2Greek.jpg';
+      var imgrate = "images/demo-shelf.png";
+      var imgLarge = "images/demo-shelf_large.png";
+      var selectColor = "images/selectIcon01.png";
+
+      var _width = 850;
+      var _height = 648;
+
+      var arrX1 = [
+        32, 223, 410, 617, 32, 166, 359, 539, 32, 129, 224, 325, 450, 567, 650,
+        737,
+      ];
+      var arrY1 = [
+        41, 41, 41, 41, 225, 228, 227, 227, 405, 404, 404, 404, 401, 401, 408,
+        408, 408,
+      ];
+      var arrX2 = [
+        191, 184, 206, 206, 131, 192, 177, 277, 95, 93, 101, 124, 114, 82, 83,
+        84,
+      ];
+      var arrY2 = [
+        133, 135, 135, 135, 143, 143, 143, 143, 143, 143, 143, 145, 145, 145,
+        140, 140,
+      ];
+
+      //dntLike2
+
+      function output(opt) {
+        $(".resultval").val(opt);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="toll-info-title">
+      Please imagine that you have run out of cleaning supplies for the
+      bathroom. We’d like you to select what you’d buy to restock your cupboard
+      from this display, as if you were buying from a supermarket.
+    </div>
+    <div class="respondent-info">
+      Click to select and double click to un-select
+    </div>
+    <div class="parentWaper">
+      <div class="scroll">
+        <div class="mainContner rateImg" id="img_01"></div>
+      </div>
+
+      <div class="buton"></div>
+    </div>
+    <div class="clearAll"></div>
+    <div class="output-info">
+      <b>Output</b>:Data will show text label or numeric code for each
+      selection.
+    </div>
+    <input
+      type="hidden"
+      id="result"
+      name="result"
+      class="resultval"
+      border="1"
+      width="400"
+    />
+  </body>
+</html>

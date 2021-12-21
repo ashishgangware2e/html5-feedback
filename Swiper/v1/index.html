@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link href="css/Swiper.css" type="text/css" rel="stylesheet">
+    <script src="js_dist/jquery.min.js" type="text/javascript"></script>
+    <script src="swipe_detect/swipeDetection.js"></script>
+    <script src="js/Swiper.js"></script>
+
+</head>
+
+<body>
+    <script>
+        var headings = '1st Card|2nd Card|3rd Card|4th Card|5th Card|6th Card';
+        var attributes = 'A|A11&&B|B11&&C|C11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11~A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11~A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11~A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11~A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11~A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11&&A|A11';
+        var cardHeight = "454";
+        var precode = '10|20|30|40|50|60';
+        var questionArr = "Choice 1. Please choose the one product you like least and remove it by swiping downwards|Choice 2. Please choose the one product you like least and remove it by swiping downwards|Choice 3. Please choose the one product you like least and remove it by swiping downwards|Choice 4. Please choose the one product you like least and remove it by swiping downwards|Choice 5. Please choose the one product you like least and remove it by swiping downwards|Choice 6. Please choose the one product you like least and remove it by swiping downwards";
+        var swipeAll=false; // true for swap all and false last card not swap
+
+        var backbutton = false;
+        var outputArr = ",,,,,,,,,6,,,,,,,,,,5,,,,,,,,,,4,,,,,,,,,,3,,,,,,,,,,2,,,,,,,,,,1";
+        var contrOrdrArr = "1,1,1,1,1"; //contnerSeq //sequence of containers in which values are removed     
+        var contSwipeOrdr = "down,up,up,up,down"; //direction // direction sequence in which values are removed
+        var currentLook = '60'; //currentLook //last look of elements
+        var removeOrdr = "10,20,30,40,50"; //removeOrdr //sequence in which values are removed
+        var seqCounter = '5'; //counter
+
+        function output(data, contnerSeq, direction, currentLook, removeOrdr, counter) {
+            $("#orderVal").val(data);
+            $("#containerOrder").val(contnerSeq);
+            $("#direction").val(direction);
+            $("#currentLook").val(currentLook);
+            $("#removeOrder").val(removeOrdr);
+            $("#counter").val(counter);
+            $(".qdiv").html(questionArr.split("|")[counter]);
+        }
+    </script>
+    <div class="swiper"> </div>
+    
+
+    <input type="hidden" id="orderVal" name="orderVal" style="width: 100%;" />
+    <input type="hidden" id="containerOrder" name="containerOrder" style="width: 100%;" />
+    <input type="hidden" id="direction" name="direction" style="width: 100%;"/>
+    <input type="hidden" id="currentLook" name="currentLook" style="width: 100%;"/>
+    <input type="hidden" id="removeOrder" name="removeOrder" style="width: 100%;"/>
+    <input type="hidden" id="counter" name="counter" style="width: 100%;"/>
+
+
+   
+</body>
+
+</html>

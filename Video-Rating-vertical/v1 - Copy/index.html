@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>VideoRating Vertical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/iphone-inline-video.browser.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-slider-pips.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-slider-pips.min.css">
+    <link rel="stylesheet" type="text/css" href="css/videoModuel.min.css">
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript">
+        var optionshow = true; //pass true for 7 option  and false for 3 option show
+        var defaultrate = 1;
+
+        function recoreddata(data) {
+            $("#outputData").val(data);
+        }
+    </script>
+</head>
+
+<body>
+    
+	<div class="title-toll">
+	As the video plays, remember to react the whole time, rating each thing you see and hear
+	</div>
+
+    <div class="loader-overlay">
+        <div class="loader">Loading...</div>
+    </div>
+    <div class="video-container clearFix">
+        <div class="errormsg">Please view the video again and indicate your interest by clicking on the scale below</div>
+        <div class="panel videoPanel">
+            <div class="video-rating-panel">
+                <video playsinline preload="auto" id="ratingVideo" poster="images/poster-bg1.jpg" src="video/sample-video.mp4">
+				<source src="video/sample-video.mp4" type="video/mp4">
+				<source src="video/sample-video.webm" type="video/webm">
+				<source src="video/sample-video.ogg" type="video/ogg">
+				<p>Your user agent does not support the HTML5 Video element.</p>
+				</video>
+                <div id="btnPlay" class="play">&nbsp;</div>
+            </div>
+            <div class="durationBlock">
+                <div class="remaingTimeBlock"><span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span></div>
+            </div>
+            <div class="ratingBlock" style="display:none;"></div>
+        </div>
+        <div class="panel labelPanel">
+            <div class="very-interested label-text"><div class="emo-label"><img src="images/interested.svg" alt="Very Interested"/></div></div>
+            <div class="neutral  label-text"><div class="emo-label"><img src="images/neutral.svg" alt="Neutral"/></div></div>
+            <div class="not-interested  label-text"><div class="emo-label"><img src="images/not-interested.svg" alt="not-interested"/></div></div>
+        </div>
+        <div class="panel sliderPanel">
+            <div id="pips-slider"></div>
+        </div>
+    </div>
+    <div class="cleaAllHeitght"></div>
+    <input type="hidden" id="outputData" name="outputData" style="width: 90%;" />
+    <input type="hidden" id="EndData" name="EndData" style="width: 90%;" />
+    <input type="hidden" id="clickval" name="clickval" style="width: 90%;" />
+    <script src="js/videoApp.min.js"></script>
+</body>
+
+</html>

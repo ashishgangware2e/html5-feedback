@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Highlighter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/plugin.js"></script>
+    
+    <script>
+        var noStarSelect = "I see you haven’t placed a yellow star anywhere. You don’t need to make use of it, if there is no motivating element. If there is, please drag it to the most motivating word/ set of words before moving on.";
+        var scaleEmoji = "img/smiley-icon.png|img/sad-icon.png|img/star.png|img/edit-icon.png|img/delete_icon.png";
+        var scaleText ="Work well|Do not work well|Most motivating|Re-write|Delete";
+        var headerText = "Drag it on the image for more option"
+        
+        var defaults = {
+			brouchureUrl: 'img/cc-only.png',
+			welltext: "Works Well",
+			notwelltext: "DOES NOT work Well",
+			mostmotivating: "Most Motivating",
+			delettext: "Delete"		
+    		}; 
+            
+        $(document).ready(function() {
+            // $('#hotspot-ctrl').hotspotdraggable({
+             
+            //     brouchureUrl: 'img/cc-only.png',
+            //     welltext: "Works Well",
+            //     notwelltext: "Does not work Well",
+            //     mostmotivating: "Most Motivating",
+            //     rewrite: "Re-write",
+            //     delettext: "Delete"
+            // });
+        })
+
+        function dataval(dataval1, dataval2, dataval3, dataval4, dataval5, dataval6, dataval7, dataval8) {
+            $('#wellndata').val(dataval1);
+            $('#notwelldata').val(dataval2);
+            $('#mostdata').val(dataval3);
+            $('#deletedata').val(dataval4);
+            $('#starCordinate').val(dataval5);
+            $('#delCordinate').val(dataval6);
+            $('#rewritedata').val(dataval7);
+            $('#rewriteCordinate').val(dataval8);
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- <div class="title-toll">
+        Please take a closer look at this page of the draft brouchure. Please highlight specific areas of the page using the icon options below. Please click on the relevant box and drag it over the brouchure page to cover the relevant element that is working
+        well / not well. Then you can adjust the size of box. You can add more than one green or red box. For the most motivating element please drag the star to the relevant place on the brouchure page. If a particular element should be removed please
+        click on it and drag and drop it into the wastepaper basket.
+    </div> -->
+
+
+    <div class="scroll">
+    <div id="hotspot-ctrl" class="container">
+
+    </div>
+    </div>
+    <input type="text" id="wellndata" name="wellndata" style="width: 100%;display:block;">
+    <input type="text" id="notwelldata" name="notwelldata" style="width: 100%;display:block;">
+    <input type="text" id="mostdata" name="mostdata" style="width: 100%;display:block;">
+    <input type="text" id="rewritedata" name="rewritedata" style="width: 100%;display:block;">
+    <input type="text" id="deletedata" name="deletedata" style="width: 100%;display:block;">
+    <input type="text" id="starCordinate" name="starCordinate" style="width: 100%;display:block;">
+    <input type="text" id="rewriteCordinate" name="rewriteCordinate" style="width: 100%;display:block;">
+    <input type="text" id="delCordinate" name="delCordinate" style="width: 100%;display:block;">
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0px; padding:0px;}
+
+body{font-family:Arial!important; margin:0px; padding:0px;}
+.clearFix{clear:both;}
+.extra_padding2{padding:4px 0 0 0;} 
+
+.wrapper_blk{width:90%; padding-top:20px; margin:0px auto;} 
+.wrapper_blk .MainBubble_blk{ width:100%; margin:0px auto; background:url(../images/Bubble_bg.png) no-repeat center; background-size:100% 100%; height:400px; position:relative;}
+
+.question_discussion{width:100%; padding:8px 10px; box-sizing:border-box;}
+.question_discussion1{width:90%; float:right; padding:8px 10px; box-sizing:border-box;}
+.question_discussion2{width:76%; float:right; padding:8px 10px; box-sizing:border-box;}
+.Qst_ask{width:100%; color:#808080; font-size:13px; font-family:Arial!important; float:left; font-style:italic;}
+.Qst_askone{width:80%!important;}
+.Qst_askfive{width:77%!important;}
+.type_ans{ width:100%; float:left; box-sizing:border-box; font-weight:normal!important; font-family:Arial!important;}
+
+.wrapper_blk .MainBubble_blk .orng01{width:24%; height:54%; position:absolute; background: url(../images/box1.png) no-repeat; background-size:100% 100%; left:0%; top:0%;}
+.wrapper_blk .MainBubble_blk .orng02{width:27.55%; height:37%; position:absolute; background: url(../images/box2.png) no-repeat; background-size:100% 100%; left:21%; top:0%;}
+.wrapper_blk .MainBubble_blk .blue01{width:27%; height:38%; position:absolute; background: url(../images/box3.png) no-repeat; background-size:100% 100%; left:50%; top:0%;}
+.wrapper_blk .MainBubble_blk .blue02{width:24%; height:50%; position:absolute; background: url(../images/box4.png) no-repeat; background-size:100% 100%; right:0%; top:0%;}
+.wrapper_blk .MainBubble_blk .orng03{width:26%; height:45%; position:absolute; background: url(../images/box5.png) no-repeat; background-size:100% 100%; left:0%; bottom:0%;}
+.wrapper_blk .MainBubble_blk .blue03{width:28%; height:45%; position:absolute; background: url(../images/box6.png) no-repeat;background-size:100% 100%; right:0%; bottom:0%;}
+
+.textarea1{width:80%; height:90%; min-height:120px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+.textarea2{width:100%; height:80%; min-height:80px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+.textarea3{width:100%; height:80%; min-height:80px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+.textarea4{width:100%; height:80%; min-height:80px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+.textarea5{width:77%; height:80%; min-height:120px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+.textarea6{width:100%; height:80%; min-height:105px; display:block; font-family:Arial!important; font-size:12px!important; font-weight:normal!important; overflow:auto; border:none; resize:none;}
+
+::-webkit-input-placeholder{font-style: italic;}
+::-webkit-input-placeholder{font-style: italic;}
+:-moz-placeholder{font-style: italic;}
+::-moz-placeholder{font-style: italic;}
+:-ms-input-placeholder{font-style: italic;}
+
+/*Desktops and laptops ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+.wrapper_blk .MainBubble_blk{ width:100%; height:300px; background-size:80% 80%;}
+.textarea1{min-height:80px; font-size:8px;}
+.textarea2{min-height:50px; font-size:8px;}
+.textarea3{min-height:50px; font-size:8px;}
+.textarea4{min-height:80px; font-size:8px;}
+.textarea5{min-height:80px; font-size:8px;}
+.textarea6{min-height:50px; font-size:8px;}
+.Qst_ask{font-size:12px;}
+.question_discussion{padding:8px 4px;}
+.question_discussion1{padding:8px 4px;}
+.question_discussion2{padding:8px 4px;}
+}
+@media screen and (min-width: 220px) and (max-width: 419px) {
+.wrapper_blk{width:100%!important;}
+.wrapper_blk .MainBubble_blk{ width:100%; height:250px;}
+.textarea1{min-height:42px;}
+.textarea2{min-height:10px;}
+.textarea3{min-height:10px;}
+.textarea4{min-height:40px;}
+.textarea5{min-height:65px;}
+.textarea6{min-height:50px;}
+.Qst_ask{font-size:10px;}
+.question_discussion{padding:8px 4px;}
+.question_discussion1{padding:8px 4px;}
+.question_discussion2{padding:8px 4px;}
+
+}
+@media screen and (min-width: 420px) and (max-width: 768px) {
+.wrapper_blk .MainBubble_blk{ width:100%; height:300px; background-size:80% 80%;}
+.textarea1{min-height:65px; font-size:8px;}
+.textarea2{min-height:50px; font-size:8px;}
+.textarea3{min-height:35px; font-size:8px;}
+.textarea4{min-height:65px; font-size:8px;}
+.textarea5{min-height:80px; font-size:8px;}
+.textarea6{min-height:50px; font-size:8px;}
+.Qst_ask{font-size:12px;}
+.question_discussion{padding:8px 8px;}
+.question_discussion1{padding:8px 8px;}
+.question_discussion2{padding:8px 8px;}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+.wrapper_blk .MainBubble_blk{ width:100%; height:350px;}
+.textarea1{min-height:100px; font-size:11px;}
+.textarea2{min-height:70px; font-size:11px;}
+.textarea3{min-height:70px; font-size:11px;}
+.textarea4{min-height:100px; font-size:11px;}
+.textarea5{min-height:100px; font-size:11px;}
+.textarea6{min-height:100px; font-size:11px;}
+.Qst_ask{font-size:15px;}
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+	.wrapper_blk .MainBubble_blk{ width:100%; height:400px; position:relative;}
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px){
+	.wrapper_blk .MainBubble_blk{ width:90%; height:375px; position:relative;}
+}
+@media screen and (min-width: 1601px) and (max-width: 1800px){
+ .wrapper_blk .MainBubble_blk{ width:90%; height:375px; position:relative;}
+}
+
+@media screen and (min-width: 1801px) and (max-width: 2100px){
+	.wrapper_blk .MainBubble_blk{ width:90%; height:375px; position:relative;}
+}

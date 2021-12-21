@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #25698e;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #154C6A;
+}
+
+.clearAll {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.toolWapper {
+    width: 80%;
+    margin: 0px auto;
+    padding: 8px;
+    position: relative;
+    /* border: 3px solid #6e2cdc;*/
+    padding-bottom: 20px;
+}
+
+.toolWapper .target-row.drp-zone {
+    width: 35%;
+}
+
+.toolWapper .target-row {
+    /* float: left; */
+    /* min-height: 200px; 14.12.20 */
+    min-height: 130px;
+    text-align: center;
+}
+
+.toolWapper .target-row.stmt-row {
+    width: 100%;
+    /* height: 180px;
+    min-height: 0px; */
+}
+
+.toolWapper .target-row .setMiddle {
+    /* width: 500px; 14.12.20 */
+    width: 80%;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*	margin-left: 18%;*/
+}
+
+.toolWapper .target-row .setMiddle .blockElments {
+    width: 100%;
+    float: left;
+    padding: 4px;
+}
+
+.borderBox {
+    border: 2px solid #6e2cdc;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #6e2cdc;
+    /* font-size: 20px; 14.12.20 */
+    font-size: 16px;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.margin_bottom {
+    margin-bottom: 10px;
+}
+
+.countBox {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 20px;
+    padding: 4px;
+    color: #858585;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.margin_bottom {
+    margin-bottom: 10px;
+}
+
+.toolWapper .target-row .toTarget {
+    position: relative;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.toolWapper .target-row .toTarget {
+    float: left;
+}
+
+.midset {
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.clickableArea {
+    float: left;
+    width: 570px;
+    /* height: 400px; 14.12.20 */
+    height: 300px;
+    border-left: 10px solid #cdcdcd;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+    cursor: crosshair;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: crosshair;
+    z-index: 11;
+    cursor: url(../images/pointer_v2.png) 19 19, crosshair;
+    z-index: 12;
+    box-sizing: content-box;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(238, 238, 238, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(1%, rgba(255, 255, 255, 1)), color-stop(1%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(238, 238, 238, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(238, 238, 238, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(238, 238, 238, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(238, 238, 238, 1) 1%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+}
+
+.bdr-clr {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 204px;
+    width: 706px;
+    /* background: #f00; */
+    /* z-index: 999; */
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(238, 238, 238, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(6%, rgba(255, 255, 255, 1)), color-stop(8%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(238, 238, 238, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(238, 238, 238, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(238, 238, 238, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(238, 238, 238, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+}
+
+.clickableArea .knob {
+    width: 18px;
+    height: 18px;
+    z-index: 11;
+    position: absolute;
+    cursor: default;
+    background: url(../images/knob_icon.png) no-repeat;
+}
+
+.bdr-clr {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 204px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    /* background: #f00; */
+    /* z-index: 999; */
+}
+
+.bottomRightNegative {
+    padding-left: 10px;
+    text-align: left;
+    cursor: default;
+    color: #6c6c6c;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.BottomleftPosetive {
+    padding-left: 10px;
+    text-align: left;
+    cursor: default;
+    color: #6c6c6c;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.draggableArea {
+    display: block;
+    margin: 0px -10px;
+    position: relative;
+    z-index: 10;
+    height: 30px;
+}
+
+.borderBox {
+    top: 45px;
+}
+
+.countBox {
+    top: 5px;
+}
+
+.clearAll {
+    clear: both;
+}
+
+.knob .strRotate {
+    white-space: nowrap;
+    position: absolute;
+    left: calc(100% + 14px);
+    top: 50%;
+    color: #6e2cdc;
+    /* font-size: 18px; 14.12.20 */
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    user-select: none;
+    transform: translateY(-50%);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.strRotate::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #c5c5c5;
+    left: -14px;
+    width: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.current_text {
+    position: absolute;
+    top: -11px;
+    left: 4px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .toolWapper {
+        width: 100%;
+    }
+    .toolWapper .target-row .setMiddle {
+        margin-left: 0%;
+    }
+    .toolWapper .target-row.stmt-row {
+        width: 100%;
+    }
+    .toolWapper .target-row.drp-zone {
+        width: 45%;
+        padding-left: 8%;
+    }
+    .knob .strRotate {
+        white-space: normal;
+        width: 600px;
+    }
+    .knob .strRotate {
+        font-size: 16px;
+    }
+    .bottomRightNegative {
+        margin-bottom: 10px;
+    }
+    .BottomleftPosetive {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 480px;
+        font-size: 16px;
+    }
+    .toolWapper .target-row .setMiddle {
+        margin-left: 18%;
+    }
+    .bottomRightNegative {
+        margin-bottom: 15px;
+    }
+    .BottomleftPosetive {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 544px;
+        font-size: 16px;
+    }
+    .bottomRightNegative {
+        margin-bottom: 15px;
+    }
+    .BottomleftPosetive {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 580px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 800px;
+    }
+}
+
+@media all and (min-width:1281px) and (max-width:1600px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 1000px;
+    }
+}
+
+@media all and (min-width:1601px) and (max-width:2500px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 1400px;
+    }
+}
+
+@media all and (min-width:2501px) and (max-width:3840px) {
+    .knob .strRotate {
+        white-space: normal;
+        width: 1600px;
+    }
+}
+br.temp-br {
+    display: none;
+}

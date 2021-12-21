@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hotspot with Opt-Out</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/stylemodule.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/hotSpotsScript.min.js"></script>
+
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var nColor = "1"; //1:Green, 2:Red or 3:Purple for click Color
+      var nClick = "99"; //number of click
+      var nCross = "1"; //don't like  Click value
+      var imagesUrl = "images/hotspots01.png"; //image for hotspots
+      var likeDislikeStr = "Don’t like anything"; //like/dislike text
+      var WidthStr = 665;
+      var HeightStr = 378;
+      function outputValue(data) {
+        $("#result").val(data);
+      }
+
+      jQuery(document).ready(function ($) {
+        $(window).load(function () {
+          setTimeout(function () {
+            $("#loader").fadeOut("slow", function () {});
+          }, 3000);
+        });
+      });
+    </script>
+
+    <div id="loader" class="loader" style="display: none">
+      <div class="loader-inner"></div>
+    </div>
+
+    <div class="tool-title">
+      Click on the image to indicate which parts you like. If you don’t like
+      anything, please click on “Don’t like anything”.
+    </div>
+    <!-- <div class="respondent-info">
+      Click on the image to indicate which parts you like. If you don’t like
+      anything, please click on “Don’t like anything”.
+    </div> -->
+
+    <div class="scroll">
+      <div class="mainContainer">
+        <div class="clearAll"></div>
+        <input
+          type="button"
+          id="dntLike"
+          class="activeCl"
+          value="I don't like"
+        />
+      </div>
+    </div>
+    <div class="clearAll"></div>
+    <div class="output-info">
+      <b>Output</b>: Data export will show segments liked by each user
+    </div>
+
+    <input type="hidden" id="result" style="width: 80%" />
+  </body>
+</html>

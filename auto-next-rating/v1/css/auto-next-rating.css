@@ -1,0 +1,325 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Calibri;
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.respondent-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 0 auto 15px;
+  background: #f5f5f5;
+  width: 80%;
+}
+.output-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 23px auto 15px;
+  background: #f5f5f5;
+  width: 80%;
+}
+.mainDiv {
+  width: 80% !important;
+  border: 2px solid #f7f7f7;
+  background: #ffffff;
+  margin: 22px auto;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px 10px rgba(240, 91, 91, 0.09);
+}
+.mainDiv .Ratinglist {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 5px;
+  text-align: center;
+}
+.mainDiv .Ratinglist ul {
+  display: inline-block !important;
+  text-align: center;
+}
+.mainDiv .Ratinglist ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.mainDiv .Ratinglist ul li span {
+  display: block;
+  padding: 5px;
+  line-height: 35px;
+  float: left;
+  color: #fff;
+  background: #757a84;
+}
+.mainDiv .imagesBlock {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.mainDiv .imagesBlock span {
+}
+.mainDiv .imagesBlock span img {
+  position: relative;
+}
+.mainDiv .textStatment {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px 0px;
+  min-height: 43px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.mainDiv .textStatment span {
+  display: inline-block;
+  position: relative;
+}
+.clickClass {
+  cursor: pointer;
+}
+.popupBlock {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+}
+
+.clickClassDesi {
+  margin-bottom: 20px;
+  padding: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-align: center;
+  display: inline-table;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.push-down {
+  position: relative;
+  transition: box-shadow 0.3s linear, transform 0.3s linear;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.push-down:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.push-down:hover {
+  transform: translateY(-5px);
+}
+.push-down:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.push-down {
+  color: #ffffff;
+}
+
+.push-down.active:before {
+  opacity: 1;
+  transform: translateY(5px);
+}
+.push-down.active > span {
+  background: #fd6655 !important;
+}
+
+.clearAll {
+  clear: both;
+}
+.title-toll {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+  line-height: 25px;
+}
+
+@media all and (max-width: 1024px) {
+  .toll-info-title {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 220px) and (max-width: 319px) {
+  .mainDiv {
+    width: 98% !important;
+  }
+  .respondent-info,
+  .output-info {
+    width: 98% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    height: 37px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mainDiv {
+    width: 98% !important;
+    height: 520px !important;
+  }
+  .respondent-info,
+  .output-info {
+    width: 98% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 140px !important;
+    height: 30px !important;
+    line-height: 19px;
+    font-size: 14px !important;
+  }
+  .clickClassDesi {
+    margin-bottom: 5px;
+  }
+  .mainDiv .textStatment {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .mainDiv {
+    width: 98% !important;
+    height: 520px !important;
+  }
+  .respondent-info,
+  .output-info {
+    width: 98% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    height: 36px !important;
+    width: 112px !important;
+    font-size: 12px !important;
+    line-height: 27px;
+  }
+  .mainDiv .textStatment {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainDiv {
+    width: 98% !important;
+  }
+  .respondent-info,
+  .output-info {
+    width: 98% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 130px !important;
+    height: 40px !important;
+  }
+  .mainDiv .Ratinglist ul li span {
+    line-height: 29px;
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .mainDiv {
+    width: 95% !important;
+  }
+  .respondent-info,
+  .output-info {
+    width: 95% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 175px !important;
+    height: 45px !important;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 180px !important;
+    height: 45px !important;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .mainDiv,
+  .respondent-info,
+  .output-info {
+    width: 85% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 160px !important;
+    height: 50px !important;
+  }
+}
+@media screen and (min-width: 1921px) and (max-width: 2400px) {
+  .mainDiv,
+  .respondent-info,
+  .output-info {
+    width: 85% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 160px !important;
+    height: 50px !important;
+  }
+}
+@media screen and (min-width: 2401px) and (max-width: 2800px) {
+  .mainDiv,
+  .respondent-info,
+  .output-info {
+    width: 85% !important;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 160px !important;
+    height: 50px !important;
+  }
+  .mainDiv .imagesBlock span img {
+    position: relative;
+    width: 285px;
+    height: 510px;
+  }
+  .textStatment span {
+    font-size: 32px;
+  }
+}
+@media all and (min-width: 2801px) {
+  .mainDiv,
+  .respondent-info,
+  .output-info {
+    width: 85%;
+  }
+  .Ratinglist ul li.clickClassDesi > span {
+    width: 160px !important;
+    height: 50px !important;
+  }
+  .textStatment span {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage Sums</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="css/coutmoduleStyle.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/countScriptApp.js"></script>
+    <script type="text/javascript">
+      var lengthOfCol = 4;
+      var topheadStr ="Newly Diagnosed|First treatment|Second treatment|Third treatment";
+      var subheadStr ="Needed no treatment​|Only needed one treatment​|Only needed two treatments";
+      var countVal = 100;
+
+      function outputvalue(data1, data2) {
+        $("#otVal1").val(data1);
+        $("#otVal2").val(data2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="title-toll">
+      You mentioned you had about 100 patients. About how many of them needed to
+      receive a stage one pharmaceutical treatment? How many needed to receive a
+      second stage treatment, and then a third stage treatment?
+    </div>
+    <div class="count-contaner"></div>
+    <div class="respondent-info">
+      <b>Output:</b>Data will show a discrete number for each specified stage.
+    </div>
+    <input type="hidden" id="otVal1" name="otVal1" />
+    <input type="hidden" id="otVal2" name="otVal2" />
+  </body>
+</html>

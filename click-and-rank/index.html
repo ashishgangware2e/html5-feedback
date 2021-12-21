@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click and Rank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/click-and-rank.min.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/click-and-rank.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.min.js"></script>
+    <script>
+      var statmentStr =
+        "Statement 1|Statement 2|Statement 3|Statement 4|Statement 5";
+      var randomValue = 1;
+      var legentText = ["Disagree Strongly​", "Agree Strongly"];
+      function outputValues(data1) {
+        $("#outputs").val(data1);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="title-toll">
+      Read each statement and then click on the scale to indicate where it
+      ranks.
+    </div>
+    <div class="respondent-info">Make sure the statements do not overlap.</div>
+    <div class="loadingscreen"></div>
+    <div class="toolWapper"></div>
+    <input
+      type="hidden"
+      class=""
+      id="outputs"
+      name=""
+      style="width: 80%; margin-top: 20px"
+    />
+    <input
+      type="hidden"
+      class=""
+      id="outputsdd"
+      name=""
+      style="width: 80%; margin-top: 20px"
+    />
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Emoticon Vertical Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/emoticon-vertical-slider.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="css/emoticon-vertical-slider.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript">
+      var statementText = "|";
+      var leftlebalValue = ["", "", "", "", "", "", "", "", "", "", ""];
+      var statementPrecode = "1|2";
+      var sliderMin = 0;
+      var sliderMax = 100;
+      var startFrom = 0;
+      var stepLabel = 10;
+
+      function outputVal(data) {
+        $("#outputValue").val(data);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="tool-title">
+      Click inside the vertical bar to show how you would rate Colgate
+      toothpaste on each of these characteristics.
+    </div>
+    <div class="respondent-info">
+      Click near the top if you are very satisfied. Or, click near the bottom if
+      you are very dissatisfied. You may change your rating by clicking again.
+    </div>
+
+    <div id="binddata" width="100%"></div>
+
+    <input
+      type="hidden"
+      id="outputValue"
+      name="outputValue"
+      style="width: 90%"
+    />
+  </body>
+</html>

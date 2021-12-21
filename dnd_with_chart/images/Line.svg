@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="463.759" height="58.49" viewBox="0 0 463.759 58.49">
+  <g id="Line" transform="translate(-79.975 -826.749)">
+    <path id="dotted_line" d="M307.542,1961.347s199.2-4.936,217.333.583c8.325,2.534,60.263,21.589,116,34.667,65.055,15.264,129.667-54.571,129.667-54.571" transform="translate(-227.542 -1114.597)" fill="none" stroke="#707070" stroke-width="2"/>
+    <g id="arrow" transform="translate(-430.792 -193.515)">
+      <path id="Icon_material-arrow-drop-down" data-name="Icon material-arrow-drop-down" d="M0,0,6.35,5.927,12.7,0Z" transform="translate(593.843 1045.015) rotate(-90)" fill="#6c6c6c"/>
+    </g>
+    <g id="arrow-2" data-name="arrow" transform="translate(164.425 -319.063) rotate(21)">
+      <path id="Path_6013" data-name="Path 6013" d="M54.353,4.667" transform="translate(543.198 1033.979)" fill="none" stroke="#6c6c6c" stroke-width="2" stroke-dasharray="3"/>
+      <path id="Icon_material-arrow-drop-down-2" data-name="Icon material-arrow-drop-down" d="M0,0,6.35,5.93,12.7,0Z" transform="translate(593.843 1045.015) rotate(-90)" fill="#6c6c6c"/>
+    </g>
+    <g id="arrow-3" data-name="arrow" transform="translate(-602.444 447.661) rotate(-41)">
+      <path id="Icon_material-arrow-drop-down-3" data-name="Icon material-arrow-drop-down" d="M0,0,6.35,5.93,12.7,0Z" transform="translate(593.843 1045.015) rotate(-90)" fill="#6c6c6c"/>
+    </g>
+  </g>
+</svg>

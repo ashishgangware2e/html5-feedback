@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thumbs Up Down​</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/thumbs-up-down.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/thumbs-up-down.js"></script>
+
+    <script>
+      var titleStr = "Leaves|Maple|Banana Palm|Ivy|Curry|Aspen|Laurel|Shrubs";
+      var thumImgStr =
+        "images/img1.jpg|images/img2.jpg|images/img3.jpg|images/img4.jpg|images/img5.jpg|images/img6.jpg|images/img7.jpg|images/img8.jpg";
+      var largeImgStr =
+        "images/img1.jpg|images/img2.jpg|images/img3.jpg|images/img4.jpg|images/img5.jpg|images/img6.jpg|images/img7.jpg|images/img8.jpg";
+      var titleInfoStr =
+        "Some variation in shape and margin of leaves.|Maples flower in late winter or early spring.|During the growth season, banana palms are prolific water hogs.|Ivy is an evergreen climber native to the damp woods of western, central, and southern Europe.|The curry tree is a tropical to sub-tropical tree in the family Rutaceae.|In North America, it is referred to as Quaking Aspen.|Laurus nobilis is an aromatic evergreen tree or large shrub with green, glabrousleaves.| shrub or bush is a small- to medium-sized perennial woody plant.";
+      function outputval(data1) {
+        $("#outputVal").val(data1);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="title-toll">
+      For each type of plant, please indicate whether you would like to see this
+      type in the community center garden.​ ​
+    </div>
+    <div class="respondent-info">
+      Hover over each plant and then click on the green “Thumbs up” if you would
+      like to see it. Or, click on the red “Thumbs down” if you would NOT like
+      to see it.
+    </div>
+    <div class="popup"></div>
+    <div class="thumbLarge" id="bindDynamic"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show a discrete number 1 (Like) or 0 (Dislike)
+      for each selection.​
+    </div>
+    <input type="hidden" id="outputVal" />
+  </body>
+</html>

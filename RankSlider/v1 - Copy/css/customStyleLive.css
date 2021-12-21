@@ -1,0 +1,102 @@
+
+*{ margin: 0px; padding: 0px; }
+
+.mainWaper{width:650px; margin:20px auto; position: relative; border:2px solid #FFF; -webkit-box-shadow: 0px 0px 8px 0px rgba(59,56,59,1); -moz-box-shadow: 0px 0px 8px 0px rgba(59,56,59,1); box-shadow: 0px 0px 8px 0px rgba(59,56,59,1);}
+
+
+#meallist .ui-state-default {border: 8px solid #70ad47; font-weight: bold; color: #2e6e9e; background:#FFF;}
+
+#meallist li{position:relative;}
+
+#meallist img{width: 100%;}
+
+.zoomIcon{width: 24px; height: 24px; position: absolute; right: 0px; top: 0px; z-index: 11; cursor: pointer;}
+.ui-state-default img{z-index: 10;}
+.ui-state-default{ height:150px; overflow: hidden;}
+
+.iconPlus{background:#eeefee url(../images/zoomIcon.png) no-repeat center;}
+.iconMinus{background: url(../images/zoom-plus.png) no-repeat;}
+
+
+.mealclass{margin: 0; padding:0px; width:100%; background: #f7f5ef; float:left;}
+.mealclass #meallist {list-style-type: none; font-family:Calibri; font-size:15px; margin: 0; padding:0px; width:100%; float:left; margin-right:10px; float:left;}
+.mealclass #meallist li {color:#0F0F0F; margin-bottom:2px; cursor:move;}
+.mealclass #meallist li span {margin-right:5px; color:#125A9E}
+.mealclass .hintText1{position:absolute; z-index: 11; right:2px; top:-20px; font-size:12px; font-family: Calibri;}
+.mealclass .hintText2{position:absolute; z-index: 11; right:2px; bottom:-18px; font-size:12px; font-family: Calibri;}
+.mrRight{margin-right: 10px;}
+.clearAll{clear: both;}
+
+.listingNumber{width:50px; position: absolute; left: -60px; top:0px;}
+.listingNumber ul{display: block;}
+.listingNumber ul li{list-style-type: none; float: left; display: table; text-align: center; height: 155px;}
+.listingNumber ul li .numBlock{display: table-cell; vertical-align: middle;}
+.listingNumber ul li .numBlock span{ display: table; width: 50px; height: 50px; background: #70ad47; border-radius: 50%;}
+.listingNumber ul li .numBlock span .Showlist{ display: table-cell; vertical-align: middle; color: #FFF; font-size: 22px; font-family: arial; -webkit-text-shadow: 1px 1px #000; border-radius: 50%; -webkit-border-radius: 50%;}
+
+.overlapAll{position: fixed; top: 0px; left: 0px; width:100%; height:100%; background:#808080; opacity: 0.8; z-index: 12; display: none;}
+.overlapblock{position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 750px; min-height:400px; /*background: #FFF; border: 8px solid #70ad47;*/ z-index: 13; /*-webkit-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); -moz-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); box-shadow: 0px 0px 12px 0px rgba(59,56,59,1);*/ display: none;}
+.largeimage{padding:10px 10px 7px 10px; margin-top: 15px; float: left; background: #70ad47; -webkit-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); -moz-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); box-shadow: 0px 0px 12px 0px rgba(59,56,59,1);}
+.largeimage{padding:10px 10px 5px 10px; margin-top: 15px; float: left; background: #70ad47; -webkit-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); -moz-box-shadow: 0px 0px 12px 0px rgba(59,56,59,1); box-shadow: 0px 0px 12px 0px rgba(59,56,59,1);}
+
+.closeIcon{width:28px; height: 28px; position: absolute; right: 2px; top:2px; z-index: 14; background: url(../images/closeIcon.png); cursor: pointer; display: none;}
+
+.popBlock{float: left; position: relative; width: 750px; height:500px; overflow: auto;}
+
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 320px) and (max-width:420px){
+	.mainWaper{width:88%; float: right;}
+	.ui-state-default{ height:100px;}
+	.listingNumber ul li{height: 106px;}
+	.overlapblock{width: 310px; height:400px;}
+	.popBlock{width: 310px; height:300px;}
+	.listingNumber{width:30px; position: absolute; left: -40px;}
+	.listingNumber ul li .numBlock span .Showlist{font-size: 18px;}
+	.listingNumber ul li .numBlock span{width: 30px; height: 30px;}
+}
+@media screen and (min-width: 421px) and (max-width: 768px){
+	.mainWaper{width:89%; float: right;}
+	.ui-state-default{ height:100px;}
+	.listingNumber ul li{height: 106px;}
+	.overlapblock{width: 410px; height:300px;}
+	.popBlock{width: 410px; height:400px;}
+	.listingNumber{width:40px; position: absolute; left: -50px;}
+	.listingNumber ul li .numBlock span .Showlist{font-size: 20px;}
+	.listingNumber ul li .numBlock span{width: 40px; height: 40px;}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px){
+	.mainWaper{width:650px;}
+	.ui-state-default{ height:150px;}
+	.listingNumber ul li{height: 155px;}
+	.overlapblock{width: 750px; height:500px;}
+	.popBlock{width: 750px; height:500px;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1132px){
+	.mainWaper{width:650px;}
+	.ui-state-default{ height:150px;}
+	.listingNumber ul li{height: 155px;}
+	.overlapblock{width: 750px; height:500px;}
+	.popBlock{width: 750px; height:500px;}
+}
+@media screen and (min-width: 1133px) and (max-width: 1600px){
+	.mainWaper{width:650px;}
+	.ui-state-default{ height:150px;}
+	.listingNumber ul li{height: 155px;}
+	.overlapblock{width: 750px; height:500px;}
+	.popBlock{width: 750px; height:500px;}
+}
+@media screen and (min-width: 1601px) and (max-width: 1900px){
+	.mainWaper{width:650px;}
+	.ui-state-default{ height:150px;}
+	.listingNumber ul li{height: 155px;}
+	.overlapblock{width: 750px; height:500px;}
+	.popBlock{width: 750px; height:500px;}
+}
+@media screen and (min-width: 1901px) and (max-width: 2400px){
+	.mainWaper{width:650px;}
+	.ui-state-default{ height:150px;}
+	.listingNumber ul li{height: 155px;}
+	.overlapblock{width: 750px; height:500px;}
+	.popBlock{width: 750px; height:500px;}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/image_highlighter.css" />
+    <script src="js/jquery-2.2-plus-ui-plus-touch.js"></script>
+    <script src="js/image_highlighter.min.js"></script>
+    <title>Image Highlighter</title>
+  </head>
+  <body>
+    <script>
+      var wdth = 700;
+      var hght = 418;
+      // var phrase = "X1:Y1:width:height";
+      var phrase =
+        "6:43:161:43|36:121:158:156|3:279:229:89|225:109:145:76|383:109:150:77|545:109:146:76|306:206:145:74|466:206:145:74|241:339:28:29|270:338:58:30|329:339:28:29|359:338:58:30|419:339:28:29|448:338:58:30|507:339:28:29|537:338:58:30|597:339:28:29|626:338:58:30";
+      var imageSrc = "images/imgpsh_fullsize_anim.png";
+
+      function receiveOutPut(noCLickArr, greenArr, redArr) {
+        $(".out-noCLick").val(noCLickArr);
+        $(".out-green").val(greenArr);
+        $(".out-red").val(redArr);
+      }
+    </script>
+    <div class="title-toll">
+      Here is a potential design for a new infographic. Please indicate your
+      opinion about it by clicking on the parts you like or dislike.
+    </div>
+    <div class="respondent-info">
+      Click on a part of the image once for “like” or twice for “dislike.” Click
+      a third time to unselect it.​
+    </div>
+    <div class="high-btn-container"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show three variables for each selection: x
+      coordinate, y coordinate, and a binary (0, 1) code.
+    </div>
+    <div class="output-container">
+      <input type="hidden" class="out-noCLick" />
+      <input type="hidden" class="out-green" />
+      <input type="hidden" class="out-red" />
+    </div>
+  </body>
+</html>

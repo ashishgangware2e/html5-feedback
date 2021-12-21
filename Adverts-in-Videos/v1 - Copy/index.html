@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Video Player </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/iphone-inline-video.browser.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/videoModuel.min.css">
+	
+	<script type="text/javascript">
+		
+		var optionshow=true;//pass true for 7 option  and false for 3 option show
+		var defaultrate=4;
+	 function recoreddata(data){
+		 $("#outputData").val(data);
+	 }
+	</script>
+</head>
+<body>
+	
+	<div class="tool-title">
+	We would now like you to listen to a radio advert from Invesco Perpetual. Please make sure your speakers are working.
+</div>
+	
+	<div class="video-container">
+		
+		<div class="video-inner">
+		<video playsinline preload="auto" id="ratingVideo" class="op" poster="" src="video/sample-video.mp4">
+		  <source src="video/sample-video.mp4" type="video/mp4">
+		  <source src="video/sample-video.webm" type="video/webm">
+		  <source src="video/sample-video.ogg" type="video/ogg">
+		  <p>Your user agent does not support the HTML5 Video element.</p>
+		</video>
+		<div id="btnPlay" class="play">&nbsp;</div>
+	  </div>
+		<div class="durationBlock"><div class="remaingTimeBlock"><span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span></div></div>
+
+		<div id="custom-seekbar">
+			<span></span>
+		  </div>
+	</div>
+
+
+	<script src="js/videoApp.min.js"></script>
+	<div class="cleaAllHeitght"></div>
+	<input type="hidden" id="outputData" name="outputData" style="width: 90%;" />
+	<input type="hidden" id="EndData" name="EndData" style="width: 90%;" />
+	<input type="hidden" id="clickval" name="clickval" style="width: 90%;" />
+	
+</body>
+</html>

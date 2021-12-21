@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="781" height="587.451" viewBox="0 0 781 587.451">
+  <defs>
+    <filter id="left_page">
+      <feOffset dx="-33" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-opacity="0.169" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="right_page">
+      <feOffset dx="33" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-opacity="0.169" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Open_Book" transform="translate(-1331.578 -296)">
+    <g id="Main_Page" transform="translate(1331.578 296.451)" fill="#e1b043" stroke="#be8f3c" stroke-width="1">
+      <rect width="781" height="587" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="780" height="586" rx="4.5" fill="none"/>
+    </g>
+    <g id="Left_Page-2" data-name="Left_Page" transform="translate(1346.354 296)">
+      <rect id="left_middle_line" width="1.472" height="587.451" transform="translate(374.334)" fill="#818181"/>
+      <g data-type="innerShadowGroup">
+        <path id="left_page-3" data-name="left_page" d="M18.477,11.042,383.61,0a1.472,1.472,0,0,1,1.472,1.472V585.979a1.472,1.472,0,0,1-1.472,1.472L11.116,575.673c-.813,0,0-9.493,0-10.306L18.477,27.238C18.477,26.425,17.665,11.042,18.477,11.042Z" transform="translate(-10.755)" fill="#fff7e8"/>
+        <g transform="matrix(1, 0, 0, 1, -14.78, 0)" filter="url(#left_page)">
+          <path id="left_page-4" data-name="left_page" d="M18.477,11.042,383.61,0a1.472,1.472,0,0,1,1.472,1.472V585.979a1.472,1.472,0,0,1-1.472,1.472L11.116,575.673c-.813,0,0-9.493,0-10.306L18.477,27.238C18.477,26.425,17.665,11.042,18.477,11.042Z" transform="translate(4.02)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Right_Page-2" data-name="Right_Page" transform="translate(1722.13 296)">
+      <rect id="right_middle_line" width="1.472" height="587.451" fill="#818181"/>
+      <g data-type="innerShadowGroup">
+        <path id="right_page-3" data-name="right_page" d="M377.36,11.042,12.227,0a1.472,1.472,0,0,0-1.472,1.472V585.979a1.472,1.472,0,0,0,1.472,1.472l372.494-11.779c.813,0,0-9.493,0-10.306L377.36,27.238C377.36,26.425,378.173,11.042,377.36,11.042Z" transform="translate(-9.268)" fill="#fff7e8"/>
+        <g transform="matrix(1, 0, 0, 1, -390.55, 0)" filter="url(#right_page)">
+          <path id="right_page-4" data-name="right_page" d="M377.36,11.042,12.227,0a1.472,1.472,0,0,0-1.472,1.472V585.979a1.472,1.472,0,0,0,1.472,1.472l372.494-11.779c.813,0,0-9.493,0-10.306L377.36,27.238C377.36,26.425,378.173,11.042,377.36,11.042Z" transform="translate(381.28)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

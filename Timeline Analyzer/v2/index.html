@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Timeline tool Analyzer</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=yes">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/moduleStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/speech_bubble.css" />
+<link rel="stylesheet" type="text/css" href="css/loginCss.css" />
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="js/analyzer_script.js"></script>
+	
+</head>
+
+<body> 
+	<script type="text/javascript">
+		var dragStatement="";
+		var precode="";
+		//use these variables only
+		var options = "Visit doctor|Confirmed diagnosis|First treatment|Ask friends/family|Initial symptoms|Event 6";
+		var opt0 = "25:25|Lorem ipsum dolor sit' amet, conse~65:62|ipiscing elit. Vivamus at lectus nibh. I";
+		var opt1 = "30:100|ctetur nulla eu r~75:65|n hendrerit urna ut elit condimentum sagittis. Fusce non ligula venenatis, luctus nulla sed, auctor nunc. Vestibulum in sodales diam. Vivamus gravida, nisl at fermentu";
+		var opt2 = "98:98|utrum nisi u~85:72|nisi lacinia m";
+		var opt3 = "98:20|us. Mauris velit tellu~95:42|is aliquam, ante arcu iaculis";
+		var opt4 = "40:70|auris velit tellus, semper at nisl ac, porttitor rutrum mauris. Nam pretium ante sed orci pretium facilisis. Cras rut~25:32|um risus arcu sit amet enim. Sed porta malesuada nisi, in suscipit nibh tincidunt vitae. In purus mi, aliquam vel mollis ac, placerat at tellus. Mauris velit tellus, semper ";
+		var opt5 = "50:60|nenatis ipsum, et ~35:12|uam, ante arcu ";
+		var opt6 = "60:50|ulum, dolor at rhoncus~45:92|t at tellus. Mauris ve";
+		var opt7 = "90:40| ipsum, et bibendum ri~55:32|entum nisl ";
+		
+		var selectedColor = "|#FFCFCF|#E6FBDB|#CFDAFF|#FFECCF|#FFF7CF|#FFCFFA";
+		var borderColor = '|#FF0B0B|#2ECB00|#0B23FF|#FFA60B|#FFCE0B|#DE0BFF';
+		var selectedChar = "V|C|F|A|I|6";
+	
+		var emoImag = "images/7_emo.svg|images/6_emo.svg|images/5_emo.svg|images/4_emo.svg|images/3_emo.svg|images/2_emo.svg|images/1_emo.svg";
+	
+		var NavBlocText = "All|Visit doctor|Confirmed diagnosis|First treatment|Ask friends/family|Initial symptoms|Event 6";
+		var textLetter ="|V|C|F|A|I|6";
+		var headingSlideText ="Timeline Analyzer|Control Opacity|Low|High|Time"
+		var login = false; //if you have pass login true then we will show login other wise we will hide login\
+		var loginIdPass= "Admin|Admin@1234";
+	</script>
+<div class="contantBlock"></div>
+</body>
+</html>
+
+

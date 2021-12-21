@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>XY Rating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/xy-rating.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/xy-rating.js"></script>
+    <script type="text/javascript" src="js/xy-rating.tipsy.min.js"></script>
+
+    <script>
+      var statmentStr =
+        "Statement 1|Statement 2|Statement 3|Statement 4|Statement 5";
+      var randomValue = 0;
+      var legentText = [
+        "Very satisfied",
+        "Not satisfied",
+        "Not important",
+        "Very important",
+      ];
+      var theme = "Theme 1";
+      var themeText = "XYZ";
+      var ItemOf = "Item|of";
+      //var le
+      function outputValues(data1, data2) {
+        $("#outputs").val(data1);
+        $("#outputs1").val(data2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="tool-title">
+      Think about the training activities you have participated in at your
+      company. For each type of training, please click anywhere in the grid to
+      indicate how important the training was and how satisfied you were with
+      it.
+    </div>
+    <div class="respondent-info">
+      The horizontal lines represent importance. The vertical lines represent
+      satisfaction.
+    </div>
+    <div class="toolWapper"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show two continuous numeric variables for each item – an X coordinate and a Y coordinate.
+    </div>
+
+    <input
+      type="hidden"
+      class=""
+      id="outputs"
+      name="outputs"
+      style="width: 80%; margin-top: 20px"
+    />
+    <input
+      type="hidden"
+      class=""
+      id="outputs1"
+      name="outputs1"
+      style="width: 80%; margin-top: 20px"
+    />
+  </body>
+</html>

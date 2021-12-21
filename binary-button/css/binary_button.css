@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Calibri;
+  margin: 0px;
+  padding: 0px;
+}
+.popup .title-toll,
+.popup .singleClickBlock,
+.popup .output-info {
+  display: none;
+}
+.singleClickBlock {
+  max-width: 595px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 7px 44px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  -webkit-border-radius: 10px;
+  border: 15px solid #d9dfe2;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+}
+.output-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 30px auto 15px;
+  background: #f5f5f5;
+  max-width: 578px;
+  width: 100%;
+}
+.iconBlockArea {
+  width: 30%;
+  height: 106px;
+  background: #e4b4b5;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 0px 0px 0px 10px;
+}
+.conSet01 {
+  background: url(../images/yes_icon.png) no-repeat;
+  margin-right: 130px;
+}
+.conSet02 {
+  background: url(../images/no_icon.png) no-repeat;
+}
+
+.iconBlockArea .setArea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.iconBlockArea .setAreaText {
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  font-size: 1.2em;
+  color: #413b3b;
+}
+.conSet .overlayActive {
+  opacity: 1;
+}
+.setArea::after {
+  position: absolute;
+  content: "";
+  left: 46%;
+  top: 57%;
+  width: 23px;
+  height: 46px;
+  border: 0px solid #e3dddd;
+  border-width: 0 10px 10px 0;
+  -webkit-transform: rotate(45deg) scale(0.8);
+  opacity: 0;
+}
+a,
+img {
+  outline: none;
+  border: none;
+}
+map > area,
+map > area:active,
+map > area:focus {
+  outline: none;
+  border: 0;
+}
+.fixclear {
+  clear: both;
+  height: 20px;
+}
+.header-nav {
+  /* display: inline-block; */
+  display: none;
+  width: 100%;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 155px;
+  margin: 0 auto;
+  background-color: #ececec;
+  border-radius: 350px;
+  cursor: pointer;
+}
+
+.image-knob {
+  width: 130px;
+  height: 130px;
+  background: url(../images/yes2.png) no-repeat;
+  background-size: 546px !important;
+  position: relative;
+  top: 14px;
+  left: 26px;
+  border-radius: 290px;
+  transition: 0.4s ease left, 0.4s ease background-position;
+  z-index: 2;
+}
+
+.no,
+.yes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #343841;
+  width: 130px;
+  height: 130px;
+  font-size: 25px;
+  left: 1px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 318px;
+  z-index: 1;
+}
+
+.yes {
+  margin-left: 27px;
+  padding-top: 44px;
+  padding-left: 30px;
+}
+.no {
+  padding-top: 44px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#lol-checkbox:checked + .button .image-knob {
+  left: 319px;
+  background-position: -350px 0 !important;
+}
+.back-nav {
+  float: right;
+  cursor: pointer;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #6d5f24;
+}
+.back-nav {
+  display: inline-block;
+  border: 1px solid #c9ae34;
+  color: #705d07;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: calibri;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  background-image: linear-gradient(to top, #fce374, #fcdf5b);
+  background-color: #fce374;
+}
+.back-nav:hover,
+.back-nav:active {
+  border: 1px solid #967d09;
+  color: #705d07;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  background-color: #fcdf5b;
+}
+.title-toll {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .singleClickBlock {
+    max-width: 95%;
+    padding: 15px;
+  }
+  .conSet01 {
+    background: url(../images/yes_icon.png) no-repeat;
+    margin-right: 18px;
+  }
+  .iconBlockArea {
+    width: 42%;
+  }
+  .no,
+  .yes {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #343841;
+    font-size: 18px;
+    left: -14px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 212px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+  }
+  .no {
+    padding-top: 12px;
+    padding-left: 0px;
+    margin-left: 225px;
+  }
+
+  .yes {
+    padding-top: 12px;
+    padding-left: 0px;
+  }
+  .image-knob {
+    width: 50px;
+    height: 50px;
+    background: url(../images/yes5.png) no-repeat;
+    background-size: 217px !important;
+    position: relative;
+    top: 18px;
+    left: 26px;
+    border-radius: 290px;
+    transition: 0.4s ease left, 0.4s ease background-position;
+    z-index: 2;
+  }
+  .button {
+    display: block;
+    width: 100%;
+    height: 85px;
+  }
+  .yes {
+    margin-left: 61px;
+  }
+  #lol-checkbox:checked + .button .image-knob {
+    left: 211px;
+    background-position: -140px 0 !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .conSet01 {
+    background: url(../images/yes_icon.png) no-repeat;
+    margin-right: 18px;
+  }
+  .iconBlockArea {
+    width: 44%;
+  }
+  .singleClickBlock {
+    transform: scale(0.8);
+    max-width: 94%;
+    padding: 26px 13px;
+  }
+  .yes {
+    margin-left: 27px;
+    padding-top: 44px;
+    padding-left: 30px;
+  }
+  #lol-checkbox:checked + .button .image-knob {
+    left: 385px;
+    background-position: -350px 0;
+  }
+  .no {
+    padding-top: 44px;
+    padding-left: 0px;
+    text-align: center;
+    margin-left: 384px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .conSet01 {
+    background: url(../images/yes_icon.png) no-repeat;
+    margin-right: 18px;
+  }
+  .singleClickBlock {
+    transform: scale(0.8);
+  }
+  .iconBlockArea {
+    width: 45%;
+  }
+  .setArea::after {
+    position: absolute;
+    content: "";
+    left: 30%;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Timeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=yes"
+    />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/moduleStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/speech_bubble.css" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="text/javascript">
+      var dragStatement =
+        "Option 01|Option 02|Option 03|Option 04|Option 05|Option 06";
+      var precode = "1|2|3|4|5|6";
+      function outputdata(data) {
+        $("#data").val(data);
+      }
+    </script>
+    <script type="text/javascript" src="js/modulescripts.js"></script>
+  </head>
+  <body>
+    <div class="title-toll">
+      Please drag each item onto the timeline. The higher you place the item,
+      the more positive you felt at that time. Every time you place an item,
+      please explain how you felt and why you felt that way. You can create your
+      own items, using the "add your own" button.
+    </div>
+    <!-- toolContaner begining -->
+    <div class="toolContaner">
+      <!-- dragContaner item begining -->
+      <div class="dragContaner">
+        <ul></ul>
+      </div>
+      <!-- dragContaner item end -->
+      <!-- emo begining -->
+      <div class="emoticonsBlock">
+        <ul>
+          <li><img src="images/Emoji_7.svg" /></li>
+          <li><img src="images/Emoji_6.svg" /></li>
+          <li><img src="images/Emoji_5.svg" /></li>
+          <li><img src="images/Emoji_4.svg" /></li>
+          <li><img src="images/Emoji_3.svg" /></li>
+          <li><img src="images/Emoji_2.svg" /></li>
+          <li><img src="images/Emoji_1.svg" /></li>
+        </ul>
+      </div>
+      <!-- emo begining end-->
+      <div class="dropContaner">
+        <div id="droppable" class="droppableArea">
+          <!-- chart iniate -->
+          <div class="innerdiv" id="chartcontainer"></div>
+          <!-- chart end-->
+          <div class="arrow-right"></div>
+          <div class="arrow-top"></div>
+          <div class="time">Time</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="output-info">
+      <b>Output</b>: Data export will show timepoint for each option with the
+      respective verbatim
+    </div>
+
+    <!-- toolContaner END -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="errorText" style="color: red; text-align: center; display: none">
+      Please fill the bubble Text...
+    </p>
+    <button style="display: none" id="forwardbutton">Forward Button</button>
+    <div style="clear: both" style="display: block"></div>
+    <input
+      type="text"
+      name="xyOutputValues"
+      value=""
+      id="data"
+      style="display: block"
+    />
+    <input type="text" value="" id="statementData" style="display: block" />
+    <input type="text" id="usercomment" style="display: block" />
+  </body>
+</html>

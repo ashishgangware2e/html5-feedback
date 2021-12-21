@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>Top 3 Drag</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type='text/javascript' src='js/jquery-1.6.4.js'></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<link href="css/stylemodule.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/dragmodule.min.js"></script>
+
+</head>
+<body>
+<script>
+var rankArr = "1|2|3";	
+var dragStr = "Tastes great|Is refreshing|Is sweet|Goes down smooth|Perfectly bubbly​";
+var randomization = 1;
+var otherOption="Other";
+var noneOfthese = "99";
+var noneOfthesetext = "Don't know";
+var hintDowntext="Drag to down";
+
+function outputValue(data)
+{
+	$("#result").val(data);	
+}
+</script>
+<div class="title-toll">
+	Click and drag 3 statements into the boxes on the right to show which statement is most descriptive, second most descriptive, and third most descriptive of Coca-Cola.
+	</div>
+ <div class="respondent-info">You can re-order the statements if you wish.</div>
+<div class="mainContainer">
+	<div class="draggableBlock"></div>
+	<div class="targetMainBlock"></div>
+	<div class="clearAll"></div>
+	<div class="dntClass"></div>
+	<div class="clearAll"></div>
+</div>
+<div class="output-info"><b>Output</b>: Data will show a discrete numeric rank for each selected item.</div>
+<input type="hidden" id="result" name="result"></input>
+<input type="hidden" id="othertt" name="othertt"></input>
+<input type="hidden" id="dntOut" name="dntOut"></input>
+</body>
+</html>
+

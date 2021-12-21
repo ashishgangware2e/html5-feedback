@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotspot with Comments</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/toolstylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moduleScript.js"></script>
+    <script
+      type="text/javascript"
+      src="https://e2eresearch.com/swteam/engame/base-url.js"
+    ></script>
+
+    <script>
+      var numberOfClick = 5;
+      var chooseLike = "1|2|3|4|5"; //1=strong agree,2=agree,3=average,4=disagree,5=strong disagree
+      var backImage = "images/board.png";
+      var buttonTextArr = "Cancel|Save";
+      var emotionText = "How does this feel?";
+      var textareaText = "Please explain why.";
+      var emoticonColorsArr = "#3fb319|#00ca00|#e5d938|#ff9a34|#ff6e64";
+      var errorMessage =
+        "<strong>Error!</strong> You've reached the maximum limit of comments!";
+      var svg = [
+        '<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><style type="text/css">.st0{fill:rgba(0, 0, 0, 0);}.st1{fill:rgb(39,37,37);}.st2{fill:rgb(39,37,37);}</style> <circle id="Ellipse_7" class="st0" cx="15" cy="15" r="14"/><path class="st2" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z M15,29C7.3,29,1,22.7,1,15S7.3,1,15,1s13.9,6.3,14,14C29,22.7,22.7,29,15,29z"/><path id="Path_2" class="st2" d="M24.1,18c-0.1,0.2-0.3,0.3-0.5,0.3c-0.1,0-0.2,0-0.2-0.1L23.1,18c-1.7,4.5-6.7,6.7-11.2,5c-2.3-0.9-4.1-2.7-5-5l-0.3,0.2c-0.1,0-0.1,0.1-0.2,0.1c-0.3,0-0.5-0.2-0.5-0.5c0-0.2,0.1-0.4,0.3-0.5l1.5-0.7c0.3-0.1,0.6,0,0.7,0.2s0,0.6-0.2,0.7l0,0L8,17.6c1.5,4,5.9,6,9.8,4.5c2.1-0.8,3.7-2.4,4.5-4.5l-0.2-0.1c-0.3-0.1-0.4-0.4-0.2-0.7s0.4-0.4,0.7-0.2l0,0l1.5,0.7C24.1,17.4,24.2,17.7,24.1,18L24.1,18z"/><path id="Path_3" class="st2" d="M8.5,13.1c-0.9,0-1.7-0.5-2.1-1.2c-0.2-0.3-0.1-0.7,0.2-0.8c0.3-0.2,0.7-0.1,0.8,0.2c0.3,0.6,1.1,0.8,1.6,0.4c0.2-0.1,0.3-0.2,0.4-0.4c0.2-0.3,0.6-0.4,0.9-0.2s0.4,0.6,0.2,0.9C10,12.7,9.3,13.1,8.5,13.1z"/><path id="Path_4" class="st2" d="M21.5,13.1c-0.8,0-1.6-0.4-2-1.1c-0.2-0.3-0.1-0.7,0.2-0.9c0.3-0.2,0.7-0.1,0.9,0.2c0.4,0.5,1.1,0.7,1.6,0.3c0.1-0.1,0.3-0.2,0.4-0.4c0.2-0.3,0.5-0.4,0.8-0.2s0.4,0.5,0.2,0.8C23.2,12.6,22.4,13,21.5,13.1z"/></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="Group_18" data-name="Group 18" transform="translate(-45 -48)"><circle id="Ellipse_8" data-name="Ellipse 8" cx="14" cy="14" r="14" transform="translate(46 49)" fill="rgba(0, 0, 0, 0)"/><g id="Group_9" data-name="Group 9" transform="translate(-1351.529 -574.38)"><g id="Group_6" data-name="Group 6" transform="translate(1396.529 622.38)"><path id="Path_5" data-name="Path 5" d="M1411.529,652.38a15,15,0,1,1,15-15A15.017,15.017,0,0,1,1411.529,652.38Zm0-28.952a13.952,13.952,0,1,0,13.952,13.952A13.968,13.968,0,0,0,1411.529,623.428Z" transform="translate(-1396.529 -622.38)" fill="#272525"/></g><g id="Group_7" data-name="Group 7" transform="translate(1403.726 632.732)"><path id="Path_6" data-name="Path 6" d="M1425.728,665.658a1.279,1.279,0,1,1,1.279,1.279A1.279,1.279,0,0,1,1425.728,665.658Z" transform="translate(-1425.728 -664.379)" fill="#272525"/></g><g id="Group_8" data-name="Group 8" transform="translate(1416.775 632.732)"><path id="Path_7" data-name="Path 7" d="M1478.668,665.658a1.279,1.279,0,1,1,1.279,1.279A1.278,1.278,0,0,1,1478.668,665.658Z" transform="translate(-1478.668 -664.379)" fill="#272525"/></g><path id="Path_8" data-name="Path 8" d="M1438.464,690.959a.521.521,0,0,1-.7.246l-.32-.153a8.676,8.676,0,0,1-16.206,0l-.321.153a.523.523,0,1,1-.451-.944l1.484-.71a.523.523,0,0,1,.451.944l-.214.1a7.628,7.628,0,0,0,14.308,0l-.214-.1a.523.523,0,0,1,.451-.944l1.484.71A.522.522,0,0,1,1438.464,690.959Z" transform="translate(-17.814 -50.576)" fill="#272525"/></g></g></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="Group_19" data-name="Group 19" transform="translate(-80 -48)"><circle id="Ellipse_9" data-name="Ellipse 9" cx="14" cy="14" r="14" transform="translate(81 49)" fill="rgba(0, 0, 0, 0)"/><g id="Group_14" data-name="Group 14" transform="translate(-1471.855 -574.38)"><g id="Group_10" data-name="Group 10" transform="translate(1559.052 632.732)"><path id="Path_9" data-name="Path 9" d="M1581.055,665.658a1.279,1.279,0,1,1,1.278,1.279A1.278,1.278,0,0,1,1581.055,665.658Z" transform="translate(-1581.055 -664.379)" fill="#272525"/></g><g id="Group_11" data-name="Group 11" transform="translate(1572.101 632.732)"><path id="Path_10" data-name="Path 10" d="M1633.994,665.658a1.279,1.279,0,1,1,1.279,1.279A1.278,1.278,0,0,1,1633.994,665.658Z" transform="translate(-1633.994 -664.379)" fill="#272525"/></g><g id="Group_12" data-name="Group 12" transform="translate(1551.855 622.38)"><path id="Path_11" data-name="Path 11" d="M1566.855,652.38a15,15,0,1,1,15-15A15.017,15.017,0,0,1,1566.855,652.38Zm0-28.952a13.952,13.952,0,1,0,13.952,13.952A13.968,13.968,0,0,0,1566.855,623.428Z" transform="translate(-1551.855 -622.38)" fill="#272525"/></g><g id="Group_13" data-name="Group 13" transform="translate(1558.858 640.808)"><path id="Path_12" data-name="Path 12" d="M1595.738,698.194h-14.946a.524.524,0,1,1,0-1.048h14.946a.524.524,0,1,1,0,1.048Z" transform="translate(-1580.268 -697.146)" fill="#272525"/></g></g></g></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="Group_20" data-name="Group 20" transform="translate(-115 -48)"><circle id="Ellipse_10" data-name="Ellipse 10" cx="14" cy="14" r="14" transform="translate(116 49)" fill="rgba(0, 0, 0, 0)"/><g id="Group_15" data-name="Group 15" transform="translate(-1596.743 -574.38)"><path id="Path_13" data-name="Path 13" d="M1726.743,652.38a15,15,0,1,1,15-15A15.017,15.017,0,0,1,1726.743,652.38Zm0-28.952A13.952,13.952,0,1,0,1740.7,637.38,13.968,13.968,0,0,0,1726.743,623.428Z" transform="translate(0)" fill="#272525"/><path id="Path_14" data-name="Path 14" d="M1740.942,665.658a1.279,1.279,0,1,1,1.279,1.279A1.279,1.279,0,0,1,1740.942,665.658Z" transform="translate(-22.002 -31.647)" fill="#272525"/><path id="Path_15" data-name="Path 15" d="M1793.882,665.658a1.279,1.279,0,1,1,1.278,1.279A1.278,1.278,0,0,1,1793.882,665.658Z" transform="translate(-61.893 -31.647)" fill="#272525"/><path id="Path_16" data-name="Path 16" d="M1742.551,692.121a.518.518,0,0,1-.208-.044.524.524,0,0,1-.272-.689,8.166,8.166,0,0,1,14.984,0,.524.524,0,1,1-.961.417,7.118,7.118,0,0,0-13.062,0A.524.524,0,0,1,1742.551,692.121Z" transform="translate(-22.82 -48.293)" fill="#272525"/></g></g></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="Group_21" data-name="Group 21" transform="translate(-150 -48)"><circle id="Ellipse_11" data-name="Ellipse 11" cx="14" cy="14" r="14" transform="translate(151 49)" fill="rgba(0, 0, 0, 0)"/><g id="Group_16" data-name="Group 16" transform="translate(-1731.015 -574.38)"><path id="Path_17" data-name="Path 17" d="M1896.015,652.38a15,15,0,1,1,15-15A15.017,15.017,0,0,1,1896.015,652.38Zm0-28.952a13.952,13.952,0,1,0,13.953,13.952A13.968,13.968,0,0,0,1896.015,623.428Z" transform="translate(0)" fill="#272525"/><path id="Path_18" data-name="Path 18" d="M1911.823,692.121a.524.524,0,0,1-.48-.733,8.166,8.166,0,0,1,14.984,0,.524.524,0,1,1-.961.417,7.119,7.119,0,0,0-13.062,0A.524.524,0,0,1,1911.823,692.121Z" transform="translate(-22.82 -48.293)" fill="#272525"/><path id="Path_19" data-name="Path 19" d="M1908.721,668.725a2.422,2.422,0,0,1-2.089-1.205.616.616,0,1,1,1.067-.618,1.181,1.181,0,0,0,2,.069.616.616,0,1,1,1.021.69A2.412,2.412,0,0,1,1908.721,668.725Z" transform="translate(-19.24 -33.317)" fill="#272525"/><path id="Path_20" data-name="Path 20" d="M1961.938,668.725a2.412,2.412,0,0,1-2-1.064.616.616,0,1,1,1.021-.69,1.181,1.181,0,0,0,2-.069.616.616,0,1,1,1.067.618A2.422,2.422,0,0,1,1961.938,668.725Z" transform="translate(-59.39 -33.317)" fill="#272525"/></g></g></svg>',
+      ];
+
+      var client_key =
+        "OLXTsDR7KcVgwSLhCF7XRQABhqCAAAAAAGFe8n3XO9ou6KgLs00P4wAzj0t0pty_ho9McwYlWf3u4H91wiFjqZnpiMrKnxS5wGa3OQrekUE9llJbWcG5k3zFWvyU7kQTPa574qWuof4qboV9-MaWNAMJw5bTy3YBUQ0ny8VGCeM2eCsbYpNDju5zj1dYIoBtvNg9OKs9N4WmITVxMPgbJ6_15UmX2nh-qqioKR_8yczqUXT6qS773GTYS4Y4ur0KbGmXwUxi9bGQcRev7LWmRbeL626iU8b-p2C-djG4-GDGBM90LAo1qlUZmAafXoLBtfqvFOKEL4e5X_7iULa27xaGQ7iv8ITI32sPH6c=";
+      function outputValue(data) {
+        $("#outputval").val(data);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="tool-title">
+      What is your opinion about the presentation of these products?
+    </div>
+    <div class="respondent-info">
+      Click on the spots you like or dislike, and then share your comments about
+      them.
+    </div>
+    <div class="scroll">
+      <div class="hotspot">
+        <div class="toolwarper"></div>
+      </div>
+    </div>
+    <div class="output-info">
+      <b>Output</b>: Data will show three variables for each selection: x
+      coordinate, y coordinate, and a binary (0, 1) code.
+    </div>
+    <input type="hidden" id="outputval" size="100" />
+  </body>
+</html>

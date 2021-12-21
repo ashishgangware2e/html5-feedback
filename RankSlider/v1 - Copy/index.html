@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sortable rank</title>
+<link type="text/css" href="css/customStyle.css" rel="stylesheet" />
+<!--<link type="text/css" href="css/customStyleLive.css" rel="stylesheet" />-->	
+<!--<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">-->
+<script type="text/javascript" src="js/jquery-1.5.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/shortingApp.js"></script>
+
+<script type="text/javascript">
+	var statementStr="Message E1<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.|Message E2<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.|Message E3<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.|Message M1<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.";
+	var unduStatementStr ="Message 89<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.|Message 99<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit&#44; sed do elusmod tempor incididunt ut labore et dolore magna aliqua.<br>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;Ut enim ad minim veniam&#44; quis nostrud exercitation uilamco laboris nist ut aliquip ex ea commodo consequat.";
+	var precodeStr="20|11|21|3|2|55|56";
+	var undoPreCode = "89|99";
+	var randomizationVal = "0";
+	var largeView="1";
+	var closeList="1";
+	//For back functionality
+	var backFunctionality = "1" //1 for yes //0 for no
+	var mealItems = "20,11";
+	var removeStr = "89,99,3,21";
+	//For back functionality
+		
+</script>
+</head>
+<body>
+
+
+
+<div class="mainWaper">
+	<div class="UndoButton"></div>
+	<div class="listingNumber">
+		<ul>
+		</ul>
+	</div>
+	<div class="mealclass">
+		<div class="hintText1">Top priority</div><div class="hintText2">Lowest priority</div>
+		<ul id="meallist"></ul>
+		<div class="clearAll"></div>
+	</div>
+	<div class="clearAll"></div>
+
+</div>
+
+<div class="overlapAll"></div>
+<div class="overlapblock">
+	<div class="closeIcon"></div>	
+	<div class="popBlock">		
+		<div class="largeimage"></div>
+	</div>
+</div>
+
+<div class="popup-block">
+	<div class="popup-header">
+		<div class="popHeading">ss</div>
+		<div class="btn_close">X</div>
+	</div>
+	<div class="contant-block">
+		<div class="contant-body">
+			<ul>
+				
+			</ul>
+		</div>
+
+		<div class="footer-block">
+			<div class="btn_cancel">Close</div>
+			<div class="btn_submit">Submit</div>
+		</div>
+	</div>
+	
+</div>
+	
+<div class="clearAll"></div>
+<input id="mealitems" name="mealitems" type="text" />
+<input id="removestr" name="removestr" type="text" />
+<input id="undostr" name="undostr" type="text" />
+
+
+</body>
+</html>

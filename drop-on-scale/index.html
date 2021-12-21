@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Drop On Scale​</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/dragndropStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.5.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script type="text/javascript" src="js/drop-on-scale​.min.js"></script>
+    <script type="text/javascript">
+      var range = "1,7";
+      //var imgStr = "images/1.png|images/2.png";
+      var imgStr = "Statement 01|Statement 02|Statement 03";
+      var minmaxstr =
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp1||10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+      var dragColor = "#272e33|#272e33|#272e33";
+      var dragWidthHeight = "150|30";
+      var fnSize = "16";
+      var fnColor = "#FFF";
+      var randomizationVal = "1"; // 1 value is passing Random Val or 0 value is not
+      var showrateValue = "0"; // 1 value is passing show rating Val or 0 value is not
+      var toptext =
+        "Drag each statement along the scale to show how much you agree or disagree with it.";
+      var headingOrg = "";
+      var headingGra = "";
+      var agreeText = "Strongly Agree|Strongly Disagree";
+
+      function outputValue(ratingVal) {
+        $("#posB").val(ratingVal);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="title-toll"></div>
+    <div class="warpermain"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show a continuous numeric value for each item.
+    </div>
+    <input type="hidden" id="posB" style="width: 300px" />
+  </body>
+</html>

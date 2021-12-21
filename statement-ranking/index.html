@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Statements Ranking</title>
+    <link href="css/styleModule.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script type="text/javascript" src="js/scriptModule.min.js"></script>
+    <script type="text/javascript">
+      var statementStr =
+        "Price|Product quality|Location of store|Customer service|Cleanliness of store|Product variety|Loyalty points|Wheelchairs available|Shelf-checkout available|Parking";
+
+      var randomization = "1";
+      var statementColor = "#000";
+      var StatementFontSize = "18";
+      var labelColor = "#fff";
+      var labelFontSize = "16";
+
+      function outputValue(value) {
+        $("#outputVal").val(value);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="title-toll">
+      Please drag and drop the following statements into order to show what is
+      most important to you when choosing where to shop for groceries.
+    </div>
+    <div class="respondent-info">
+      Place the most important items at the top and the least important items at
+      the bottom.
+    </div>
+    <div class="mainwaper"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show discrete numeric rank order for each item.
+    </div>
+
+    <input type="hidden" id="outputVal" />
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hotspot with Opt-Out</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/stylemodule.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/popup.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/hotSpotsScript.min.js"></script>
+    <script type="text/javascript" src="js/hotsport-with-output.js"></script>
+    <script
+      type="text/javascript"
+      src="https://e2eresearch.com/swteam/engame/base-url.js"
+    ></script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var nColor = "1"; //1:Green, 2:Red or 3:Purple for click Color
+      var nClick = "99"; //number of click
+      var nCross = "1"; //don't like  Click value
+      var imagesUrl = "images/hotspots01.png"; //image for hotspots
+      var likeDislikeStr = "Don’t like anything"; //like/dislike text
+      var WidthStr = 665;
+      var HeightStr = 378;
+      var client_key =
+        "7-BDXi6S5LfZPnti_PO23AABhqCAAAAAAGFe8VLV2PMG6SfrvjbasOQoNkLC-oBTPR_Adf-_K_kV-jHZKp-g-Wyklzg26yOOaQX1TX7oOCa1hI6-hCd34o9h2iWL22LsWPGWDjJX8nyJ6kUNptGrZaiip3fWnGmCDFqlQUAPLcpcIYIGTOGgFuJz9SmL-24PAUI5bwVXbcQLcYmLL8eqsSaKRwHIvfddQRWgWpleosJCdbRkIL8xuW4FMDCO0jIYP5pen30OtrqW6E5tMRzvB2BHveJWbG7FAuy2WOznhJ8IcY37Ip3Wz5FOrXTGOF40VHdgsbo9wyQh-tl9UaJEBIu9Tp5QI9DSPZanPEY=";
+      function outputValue(data) {
+        $("#result").val(data);
+      }
+    </script>
+
+    <div class="tool-title">
+      Click on the image to indicate which parts you like. If you don’t like
+      anything, please click on “Don’t like anything”.
+    </div>
+    <div class="scroll">
+      <div class="mainContainer">
+        <div class="clearAll"></div>
+      </div>
+    </div>
+    <div class="clearAll"></div>
+    <div class="output-info">
+      <b>Output</b>: Data export will show segments liked by each user
+    </div>
+
+    <input type="hidden" id="result" style="width: 80%" />
+  </body>
+</html>

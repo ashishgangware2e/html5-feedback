@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hill Rating</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/hill-rating-slider.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.event.drag-2.2.min.js"
+    ></script>
+    <script type="text/javascript" src="js/webkitdragdrop.min.js"></script>
+    <script type="text/javascript" src="js/hill-rating-data.min.js"></script>
+    <script type="text/javascript" src="js/hill-rating.min.js"></script>
+  </head>
+  <body>
+    <div class="title-toll">
+      Place the brands along the scale to indicate how much you agree or
+      disagree with the statement.
+    </div>
+    <div class="respondent-info">The brand is trustworthy</div>
+    <div class="scroll">
+      <div class="toll-container">
+        <script type="text/javascript">
+          fuctioncalling(
+            "<dragdrop><brand>brand01.png|brand02.png|brand03.png|brand04.png|brand05.png</brand><scale>Strongly Disagree|Strongly Agree</scale><range>0|10|20|30|40|50|60|70|80|90|100</range></dragdrop>"
+          );
+        </script>
+      </div>
+    </div>
+    <div class="output-info">
+      <b>Output</b>: Data will show continuous numeric rating for each item.
+    </div>
+  </body>
+</html>

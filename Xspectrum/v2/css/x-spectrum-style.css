@@ -1,0 +1,238 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.toolWapper {
+  width: 50%;
+  margin: 0px auto;
+  position: relative;
+}
+
+.toolWapper .target-row {
+  width: 100%;
+}
+.toolWapper .target-row .setMiddle {
+  width: 250px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.blockElments {
+  position: relative;
+}
+#countdownList {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.borderBox {
+  width: 100%;
+  position: absolute;
+  font-size: 20px;
+  user-select: none;
+  text-align: center;
+  /* display: table; */
+  color: #000;
+  background: #fff;
+  padding: 22px;
+  border: 1px solid #cfcfcf;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16),
+    0px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16),
+    0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.v-algn {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.countBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  background: #ffffff;
+  font-size: 20px;
+  color: #858585;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.count-text {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+.count-number {
+  display: flex;
+  padding: 4px 23px;
+  background: #ffffff;
+  box-shadow: inset -3px 5px 6px #00000029;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #d8d8d8;
+  color: #000000;
+  font-weight: bold;
+}
+
+.toolWapper .target-row .toTarget {
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.target-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  display: none;
+}
+
+.midset {
+  display: block;
+  padding-left: 12px;
+  padding-right: 25px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.clickableArea {
+  display: block;
+  padding: 0px;
+  cursor: url(../images/pointer_v2.png) 19 19, crosshair;
+  box-sizing: content-box;
+  border-top: 200px solid transparent;
+  position: relative;
+}
+.clickableArea::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 18px;
+  left: 0;
+  background: url(../images/horizontal.svg) no-repeat;
+  background-size: 100%;
+}
+.clickableArea .knob {
+  width: 32px;
+  height: 48px;
+  z-index: 11;
+  position: absolute;
+  cursor: default;
+  background: url(../images/Bottom_icon.svg) no-repeat;
+  margin-top: -40px;
+}
+/* .clickableArea .knob:first-child{
+    margin-left: -13px;
+}
+.clickableArea .knob:last-child{
+    margin-left: 3px;
+} */
+.bdr-clr {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  height: 204px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset -3px 5px 6px #00000029;
+  border: 1px solid #d8d8d8;
+}
+.bottomRightNegative {
+  position: absolute;
+  width: 180px;
+  bottom: -15px;
+  text-align: right;
+  right: 0;
+  cursor: default;
+  color: #0a8d12;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 13px;
+  user-select: none;
+  padding-right: 10px;
+}
+
+.BottomleftPosetive {
+  position: absolute;
+  width: 180px;
+  text-align: left;
+  bottom: -15px;
+  left: 0;
+  cursor: default;
+  color: #f54f4f;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 13px;
+  user-select: none;
+  padding-left: 10px;
+}
+
+.draggableArea {
+  display: block;
+  margin: 0px -10px;
+  position: relative;
+  z-index: 10;
+  height: 30px;
+}
+
+.knob .strRotate {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  position: relative;
+  bottom: 26px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* .strRotate::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    background: #c5c5c5;
+    left: -8px;
+    width: 2px;
+    top: 4px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+} */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .toolWapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .toolWapper {
+    width: 100%;
+  }
+  .v-algn {
+    font-size: 14px;
+  }
+}

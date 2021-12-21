@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<title>EmoTarget</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" media="all" href="css/all.min.css">
+ <script type="text/javascript" src="js/all.min.js"></script>
+ <script type="text/javascript" src="js/emo.js"></script>
+
+<style>
+.header-nav {
+    /* display: inline-block; */
+    display: none;
+    width: 100%;
+}
+    .back-nav{
+        float: right;
+        cursor: pointer;
+    }
+    .back-nav a{
+        text-decoration: none;      
+        color: #6d5f24; 
+		padding: 10px 20px;
+		display:block;
+         
+    }
+    .back-nav{
+        display: inline-block;
+        border:1px solid #c9ae34;
+        color: #705D07;
+        border-radius: 3px 3px 3px 3px;
+        -webkit-border-radius: 3px 3px 3px 3px;
+        -moz-border-radius: 3px 3px 3px 3px;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-family: calibri;
+        margin: 10px;
+        box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+        -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+        -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+        background-image: linear-gradient(to top, #fce374, #fcdf5b);
+        background-color: #fce374;
+    }
+    .back-nav:hover, .back-nav:active{
+        border:1px solid #967d09;
+        color: #705D07;
+        box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+        -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+        -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+        background-color: #fcdf5b;
+    }
+	
+</style>
+</head>
+
+<body>
+	<div class="title-toll ">
+	Now please imagine Product X is at the centre of this map. For the following emotions, please indicate how closely they fit to Product X by clicking onto the map. The closer you click to the centre of the map, the closer you feel that emotion fits to this Product X.
+</div>
+
+ <div class="respondent-info">Clcik on the map where you want the statement placed</div>
+
+
+<div class="wrapper row-of-icons"><div class="leftdiv"></div><div class="maindiv"><div class="heart-image"></div><div class="rightdiv" id="targetdiv"><span class="txtSpan"></span></div></div></div>
+<div class="output-info"><b>Output</b>: Data export will show the circle level where each statement is placed</div>
+
+<input type="hidden" class="" id="outputs" name="" style="width:80%; margin-top:20px;border:1px solid rgba(0, 0, 0, 0.27)"></body></html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>RaceTrack</title>
+    <link type="text/css" rel="stylesheet" href="css/racetrack-style.css">
+    <script type='text/javascript' src='js/jquery-1.6.4.js'></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simulate.js"></script>
+    <script type="text/javascript" src="js/racetrack-script.js"></script>
+    <script type="text/javascript">
+        var range = "0|100"; /*min Max values for output*/
+        var imgStr = "F|G|M|H|I|K|L|M|N"; /*Name on cars*/
+        var carValue = "-1|-1|-1|-1|-1|-1|-1|-1|-1"; /*Initial values for each car*/
+        var carPos = "-1:-1|-1:-1|-1:-1|-1:-1|-1:-1|-1:-1|-1:-1|-1:-1|-1:-1"; /*  car position as "xPos:yPos|xPos:yPos|xPos:yPos|xPos:yPos....,"*/
+        var randomValue = "0"; //  zero >> No Random value  One >> randomize value
+        var precode = "1|2|3|4|5|6|7|8|9|10";
+        var trackText = "START|FINISH";
+        var scaleText = "Not at all motivating to prescribe|Very motivating to prescribe"
+        var labelText = "Brand2|Brand1|Brand4|Brand3|Brand5|Brand6|Brand7|Brand8|Brand9"; //First is fixed and "|" for rest
+        var RacetrackOption = 1; //1 if everything is draggable //2 to put on same position no draggable //3 to put on same position but draggable
+        var enableInput = "1"; //1--Already filled input values //2--enable Input values
+        var dragOrClick = "click";//drag for dragging from drag area to drop area // click for clicking on the drop area
+        var clickAniSped = 500;
+
+        function outputValue(aoutpt, data) {
+            $("#resultstr").val(aoutpt);
+            $("#resultstr1").val(data);
+            $("#RTQ1HTML_1").val(aoutpt);
+            $("#RTQ1HTML_2").val(data);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="warpermain"></div>
+    <input type="text" id="resultstr" name="resultstr" style="width:50%; margin-top:10px;" value="">
+    <input type="text" id="resultstr1" name="resultstr1" style="width:50%; margin-top:10px;" value="">
+    <input type="text" id="brandNames" name="brandNames" style="width:50%; margin-top:10px;" value="">
+    <input type="text" id="ttlDroped" style="width:50%; margin-top:10px;" value="0">
+    <!-- <div class="clickonme validation">ClickOnMe</div> -->
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,31 @@
+#starchlist .ui-state-default { border: 1px dotted #E3BD56; font-weight: bold; color: #2e6e9e; background: rgba(252,234,187,1);
+background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(100%, rgba(251,223,147,1)));
+background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+background: -o-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 );}
+
+
+#meallist .ui-state-default {border: 1px dotted #84B954; font-weight: bold; color: #2e6e9e; background: rgba(215,252,183,1);
+background: -moz-linear-gradient(top, rgba(215,252,183,1) 0%, rgba(144,215,81,1) 50%, rgba(111,186,46,1) 51%, rgba(215,252,183,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(215,252,183,1)), color-stop(50%, rgba(144,215,81,1)), color-stop(51%, rgba(111,186,46,1)), color-stop(100%, rgba(215,252,183,1)));
+background: -webkit-linear-gradient(top, rgba(215,252,183,1) 0%, rgba(144,215,81,1) 50%, rgba(111,186,46,1) 51%, rgba(215,252,183,1) 100%);
+background: -o-linear-gradient(top, rgba(215,252,183,1) 0%, rgba(144,215,81,1) 50%, rgba(111,186,46,1) 51%, rgba(215,252,183,1) 100%);
+background: -ms-linear-gradient(top, rgba(215,252,183,1) 0%, rgba(144,215,81,1) 50%, rgba(111,186,46,1) 51%, rgba(215,252,183,1) 100%);
+background: linear-gradient(to bottom, rgba(215,252,183,1) 0%, rgba(144,215,81,1) 50%, rgba(111,186,46,1) 51%, rgba(215,252,183,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7fcb7', endColorstr='#d7fcb7', GradientType=0 );}
+#meallist img{width: 340px;}
+#starchlist img{width: 340px;}
+
+#starchlist {list-style-type: none; margin: 0; padding:0px; width: 350px; background: #f7f5ef; /*min-height:480px;*/ float:left; font-family: Calibri; font-size:15px; color:#9CA81D;}
+#starchlist li {padding: 0.4em; color:#0F0F0F; margin-bottom:2px; cursor:move;}
+#starchlist li span {margin-right:5px; color:#125A9E}
+
+.mealclass{position:relative; margin: 0; padding:0px; width: 350px; background: #f7f5ef; min-height:480px; float:left; margin-right:10px; float:left;}
+.mealclass #meallist {list-style-type: none; font-family:Calibri; font-size:15px; margin: 0; padding:0px; width: 350px; min-height:480px; float:left; margin-right:10px; float:left;}
+.mealclass #meallist li {padding: 0.4em; color:#0F0F0F; margin-bottom:2px; cursor:move;}
+.mealclass #meallist li span {margin-right:5px; color:#125A9E}
+.mealclass .hintText1{position:absolute; right:5px; top:8px; font-size:12px; font-family: Calibri;}
+.mealclass .hintText2{position:absolute; right:5px; bottom:8px; font-size:12px; font-family: Calibri;}

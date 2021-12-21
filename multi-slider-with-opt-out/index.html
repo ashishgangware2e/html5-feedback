@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/multi-slider-with-Opt-out.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="css/multi-slider-with-Opt-out.min.css"
+      type="text/css"
+    />
+    <title>Multi-Slider with Opt-out​</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var statementText =
+        "~Passionate~Apathetic|~Approachable~Distant|~Reliable~Inconsistent|~Ambitious~Lethargic|~Optimistic~Pessimistic|~Creative~Unimaginative|~Brave~Timid|~Innovative~Old-fashion";
+      var optOutObj = "N/A|N/A|N/A|N/A|D/K|N/A|N/A|None";
+      var fontFamily = "Arial";
+      var fontColor = "#515151";
+      var fontSize = "15";
+      var randomizationVal = 0;
+      var startFrom = 5;
+      var min1 = 0;
+      var max1 = 10;
+
+      function outputVal(data) {
+        $("#outputValue").val(data);
+      }
+    </script>
+
+    <div class="title-toll">
+      For each pair of descriptors, drag the pointer to the point on the line
+      that best describes this brand.
+    </div>
+    <div class="respondent-info">Microsoft</div>
+
+    <table
+      id="binddata"
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+    >
+      <tbody></tbody>
+    </table>
+    <div class="output-info">
+      <b>Output</b>: Data will show discrete numeric rating for each item.
+    </div>
+    <input
+      type="hidden"
+      id="outputValue"
+      name="outputValue"
+      style="width: 90%"
+    />
+  </body>
+</html>

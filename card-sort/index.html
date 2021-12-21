@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card Sort​</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/card-sort.min.css" />
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/card-sort.min.js"></script>
+  </head>
+  <script>
+    var dragStatements =
+      "images/user_1.png|images/user_2.png|images/user_3.png|images/user_4.png|images/user_5.png|images/user_6.png|images/user_7.png|images/user_8.png|images/user_1.png|images/user_3.png";
+    var dragStatementsCode = "1|2|3|4|5|6|7|8|9|10";
+    var dropStatements =
+      "Messenger|Snapchat|Instagram|Facebook|Twitter|Linkedin";
+    var dropStatementsCode = "1|2|3|4|5|6";
+    var dropZoneColors =
+      "images/Messenger.png|images/Snapchat.png|images/instagram.png|images/facebook2.png|images/twitter.png|images/linkedin.png";
+
+    var RandomDrag = false;
+    var RandomDrop = false;
+
+    var noneOFThese = true;
+    var noneCode = "7";
+    var noneStatemnt = "None of these";
+    var noneColor = "images/noneof-these.png";
+
+    //output box  == OB
+    //inptArr == input Array
+    function frontOutput(OB, inptArr, alldrop) {
+      $(".output" + eval(OB)).val(inptArr);
+      $(".all_drop").val(alldrop);
+    }
+  </script>
+
+  <body>
+    <div class="title-toll">
+      Drag and drop each business leader into the one box that best reflects
+      where you would expect to find them on social media.
+    </div>
+    <div class="dnd--outer--container clearfix"></div>
+    <div class="output">
+      <!-- this works on the basis of var dropStatementsCode -->
+      <input type="hidden" class="output1" data-name="output1" />
+      <input type="hidden" class="output2" data-name="output2" />
+      <input type="hidden" class="output3" data-name="output3" />
+      <input type="hidden" class="output4" data-name="output4" />
+      <input type="hidden" class="output5" data-name="output5" />
+      <input type="hidden" class="output6" data-name="output6" />
+      <input type="hidden" class="output7" data-name="output7" />
+      <input type="hidden" class="all_drop" />
+    </div>
+  </body>
+</html>

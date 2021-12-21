@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/clickUp_downStyle.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/clickUpDown_customscript.min.js"
+    ></script>
+    <title>Click to Rank</title>
+  </head>
+
+  <body>
+    <script>
+      var movstatements =
+        "Harry's|Gillette|Schick|BIC|Philips|Dollar Shave Club​";
+      var fixstatements = "Like the most|||||Like the least​";
+      var fixstatementsCode = "1|2|3|4|5|6";
+      var movstatementsCode = "1|2|3|4|5|6";
+
+      function sortdata(data) {
+        $("#outputvalues").val(data);
+      }
+    </script>
+
+    <div class="title-toll">
+      Please rank the following brands of razors from the one you like the most
+      at the top to the one you like the least at the bottom.
+    </div>
+    <div class="respondent-info">
+      Click the arrows to move brands up and down.
+    </div>
+    <div class="toolWarper"></div>
+    <div style="clear: both"></div>
+    <div class="respondent-info">
+      <b>Output :</b> Data will show numeric rank for each item.
+    </div>
+    <input type="hidden" id="outputvalues" name="outputvalues" />
+  </body>
+</html>

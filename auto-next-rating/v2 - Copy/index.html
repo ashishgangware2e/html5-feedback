@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Next Rating</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/auto-next-rating.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/auto-next-rating.min.js"></script>
+
+    <script type="text/javascript">
+      var imgstr = "P1.png|P2.png|P3.png|P4.png|P5.png"; //images for Rate
+      var textstr =
+        "This chocolate is creamy smooth.|This chocolate is creamy smooth.|This chocolate is creamy smooth.|This chocolate is creamy smooth.|This chocolate is creamy smooth."; //Text for Rate
+      var ratestr =
+        "Strongly agree|Some what agree|Not sure|Somewhat disagree​|Strongly disagree"; //Reting Option
+      var randomizationStr = "0"; // 1 is Random Value -  or  -  0 is not Random Value
+      var MainWidth = "840"; //Main display width
+      var MainHeight = "450"; //Main display width
+      var ViewImgSize = "300"; //IMG size
+
+      var listWidth = "60"; //List Rate List width
+      var listHeight = "30"; //List Rate List Height
+      var listbgColor = "#757a84|#757a84|#757a84|#757a84|#757a84"; //List Rate List background color
+      var listFontSize = "20"; //List Rate List background color
+      var showImage = "1"; //1 is show IMAGE or 0 is not show
+      var showText = "1"; //1 is show TEXT or 0 is not show
+      var animationTime = 400; // not more Thans 600
+
+      var statmentBgColor = "#c55a11"; //statment background color
+      var statmentTextColor = "#ffffff"; //statment text color
+      var statmentTextsize = "20"; //statment font size
+
+      function outputValue(data) {
+        $("#result").val(data);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="title-toll">
+      What is your opinion about the following statement?
+    </div>
+    <div class="respondent-info">Click on one answer option.</div>
+    <div class="mainDiv"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show discrete numeric rating for each item.
+    </div>
+
+    <input type="hidden" id="result" style="width: 100%" />
+  </body>
+</html>

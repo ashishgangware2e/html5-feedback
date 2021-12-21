@@ -1,0 +1,634 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  margin: 0px;
+  padding: 10px;
+  font-family: Arial;
+}
+.respondent-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 0 auto 15px;
+  background: #f5f5f5;
+  width: 98%;
+  text-align: center;
+}
+.output-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 10px 15px 30px 15px;
+  background: #f5f5f5;
+  width: 98%;
+  margin: 30px auto;
+}
+.ui-widget-content {
+  border: 1px solid #b4d1e7;
+  /* background: rgb(122, 114, 255);
+    background: linear-gradient(90deg, rgba(122, 114, 255, 0.9976365546218487) 0%, rgba(10, 204, 248, 1) 0%, rgba(114, 243, 178, 1) 100%); */
+  background-color: #1abc9c;
+  background-image: -webkit-linear-gradient(
+    left,
+    #e74c3c 0%,
+    #f1c40f 50%,
+    #1abc9c 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #e74c3c 0%,
+    #f1c40f 50%,
+    #1abc9c 100%
+  );
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #a3c243;
+  border: 1px solid #efa41b !important;
+  cursor: pointer;
+}
+
+#binddata {
+  width: 98%;
+  margin: 10px auto;
+  border-top: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
+}
+
+#binddata tr td {
+  border-bottom: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+  padding: 8px;
+  font-size: 15px;
+  color: #4d4c4c;
+}
+
+.tbleft,
+.tbright {
+  width: 20%;
+}
+
+.tbleft {
+  text-align: right;
+}
+
+.tbmid {
+  width: 60%;
+  /* background: #fff; */
+}
+
+#binddata tr:nth-child(even) {
+  background: #f4fffa;
+}
+
+#binddata tr:nth-child(odd) {
+  background: #fff;
+}
+
+.ui-slider-handle:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 3px;
+  right: 1px;
+  bottom: auto;
+  left: auto;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent #ffffff;
+}
+
+.ui-slider-handle::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 3px;
+  left: 2px;
+  bottom: auto;
+  border-width: 6px 8px 6px 0;
+  border-color: transparent #ffffff;
+}
+
+/*#binddata tr:nth-child(odd) { background: #fff; }
+    #binddata tr:nth-child(even) { background: #eaeaea; }*/
+
+/* .odd {
+    background: #fff;
+}
+
+.even {
+    background: #eaeaea;
+} */
+
+/*.ui-slider-tip:after,.ui-slider-tip:before{display: none!important;}*/
+
+.slider1 {
+  margin: 0.5em 0.5em;
+}
+
+/* HORIZONTAL */
+
+/* increase bottom margin to fit the pips */
+
+.ui-slider-horizontal.ui-slider-pips {
+  margin-bottom: 1.4em;
+}
+
+/* default hide the labels and pips that arnt visible */
+
+/* we just use css to hide incase we want to show certain */
+
+/* labels/pips individually later */
+
+.ui-slider-pips .ui-slider-label,
+.ui-slider-pips .ui-slider-pip-hide {
+  /* display: none; */
+}
+
+/* now we show any labels that we've set to show in the options */
+
+.ui-slider-pips .ui-slider-pip-label .ui-slider-label {
+  display: block;
+}
+
+/* PIP/LABEL WRAPPER */
+
+/* position each pip absolutely just below the default slider */
+
+/* and also prevent accidental selection */
+
+.ui-slider-pips .ui-slider-pip {
+  width: 2em;
+  height: 1em;
+  line-height: 1em;
+  position: absolute;
+  font-size: 0.8em;
+  color: #999;
+  overflow: visible;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+  margin-left: -1em;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* little pip/line position & size */
+
+.ui-slider-pips .ui-slider-line {
+  background: #999;
+  width: 1px;
+  height: 7px;
+  position: absolute;
+  left: 50%;
+  top: -6px;
+}
+
+/* the text label postion & size */
+
+/* it overflows so no need for width to be accurate */
+
+.ui-slider-pips .ui-slider-label {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -1em;
+  width: 2em;
+}
+
+/* make it easy to see when we hover a label */
+
+.ui-slider-pip:hover .ui-slider-label {
+  color: black;
+  font-weight: bold;
+}
+
+/* VERTICAL */
+
+/* vertical slider needs right-margin, not bottom */
+
+.ui-slider-vertical.ui-slider-pips {
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+/* align vertical pips left and to right of the slider */
+
+.ui-slider-vertical.ui-slider-pips .ui-slider-pip {
+  text-align: left;
+  top: auto;
+  left: 20px;
+  margin-left: 0;
+  margin-bottom: -0.5em;
+}
+
+/* vertical line/pip should be horizontal instead */
+
+.ui-slider-vertical.ui-slider-pips .ui-slider-line {
+  width: 3px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.ui-slider-vertical.ui-slider-pips .ui-slider-label {
+  top: 50%;
+  left: 0.5em;
+  margin-left: 0;
+  margin-top: -0.5em;
+  width: 2em;
+}
+
+/* FLOATING HORIZTONAL TOOLTIPS */
+
+/* remove the godawful looking focus outline on handle and float */
+
+.ui-slider-float .ui-slider-handle:focus,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip-label {
+  outline: none;
+}
+
+/* style tooltips on handles and on labels */
+
+/* also has a nice transition */
+
+.ui-slider-float .ui-slider-tip,
+.ui-slider-float .ui-slider-tip-label {
+  position: absolute;
+  visibility: hidden;
+  top: -40px;
+  display: block;
+  width: 34px;
+  margin-left: -18px;
+  left: 50%;
+  height: 20px;
+  line-height: 20px;
+  background: #8fc150;
+  border-radius: 3px;
+  border: 1px solid #ee9621;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition-duration: 200ms, 200ms, 0;
+  -moz-transition-duration: 200ms, 200ms, 0;
+  -ms-transition-duration: 200ms, 200ms, 0;
+  transition-duration: 200ms, 200ms, 0;
+  -webkit-transition-property: opacity, top, visibility;
+  -moz-transition-property: opacity, top, visibility;
+  -ms-transition-property: opacity, top, visibility;
+  transition-property: opacity, top, visibility;
+  -webkit-transition-delay: 0, 0, 200ms;
+  -moz-transition-delay: 0, 0, 200ms;
+  -ms-transition-delay: 0, 0, 200ms;
+  transition-delay: 0, 0, 200ms;
+}
+
+/* show the tooltip on hover or focus */
+
+/* also switch transition delay around */
+
+.ui-slider-float .ui-slider-handle:hover .ui-slider-tip,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  opacity: 1;
+  top: -30px;
+  visibility: visible;
+  -webkit-transition-delay: 200ms, 200ms, 0;
+  -moz-transition-delay: 200ms, 200ms, 0;
+  -ms-transition-delay: 200ms, 200ms, 0;
+  transition-delay: 200ms, 200ms, 0;
+}
+
+/* put label tooltips below slider */
+
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label {
+  top: 42px;
+}
+
+.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  top: 32px;
+  font-weight: normal;
+}
+
+/* give the tooltip a css triangle arrow */
+
+.ui-slider-float .ui-slider-tip:after,
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-top-color: #ee9621;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* put a 1px border on the tooltip arrow to match tooltip border */
+
+.ui-slider-float .ui-slider-tip:before,
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-top-color: #ee9621;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* switch the arrow to top on labels */
+
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 1);
+  top: -10px;
+}
+
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-bottom-color: #888;
+  top: -11px;
+}
+
+/* FLOATING VERTICAL TOOLTIPS */
+
+/* tooltip floats to left of handle */
+
+.ui-slider-vertical.ui-slider-float .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-tip-label {
+  top: 50%;
+  margin-top: -11px;
+  width: 34px;
+  margin-left: 0px;
+  left: -60px;
+  color: #333;
+  -webkit-transition-duration: 200ms, 200ms, 0;
+  -moz-transition-duration: 200ms, 200ms, 0;
+  -ms-transition-duration: 200ms, 200ms, 0;
+  transition-duration: 200ms, 200ms, 0;
+  -webkit-transition-property: opacity, left, visibility;
+  -moz-transition-property: opacity, left, visibility;
+  -ms-transition-property: opacity, left, visibility;
+  transition-property: opacity, left, visibility;
+  -webkit-transition-delay: 0, 0, 200ms;
+  -moz-transition-delay: 0, 0, 200ms;
+  -ms-transition-delay: 0, 0, 200ms;
+  transition-delay: 0, 0, 200ms;
+}
+
+.ui-slider-vertical.ui-slider-float .ui-slider-handle:hover .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  top: 50%;
+  margin-top: -11px;
+  left: -50px;
+}
+
+/* put label tooltips to right of slider */
+
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label {
+  left: 47px;
+}
+
+.ui-slider-vertical.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  left: 37px;
+}
+
+/* give the tooltip a css triangle arrow */
+
+.ui-slider-vertical.ui-slider-float .ui-slider-tip:after,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 1);
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -5px;
+  right: -10px;
+  margin-left: 0;
+  top: auto;
+  left: auto;
+}
+
+.ui-slider-vertical.ui-slider-float .ui-slider-tip:before,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-left-color: #888;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -5px;
+  right: -11px;
+  margin-left: 0;
+  top: auto;
+  left: auto;
+}
+
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-right-color: rgba(255, 255, 255, 1);
+  right: auto;
+  left: -10px;
+}
+
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-right-color: #888;
+  right: auto;
+  left: -11px;
+}
+
+/*09/02/2016*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.fl {
+  float: left;
+  width: 20%;
+  font-size: 13px;
+}
+
+.fr {
+  float: right;
+  width: 20%;
+  text-align: left;
+  font-size: 15px;
+}
+
+.na-bt {
+  border: solid 1px #c7c7c7;
+  background-color: #e2e2e2;
+  display: inline-block;
+  padding: 5px 20px;
+  cursor: pointer;
+  margin-top: 31px;
+  color: #777;
+}
+
+.na-bt.disabled {
+  background-color: #14d0f2;
+  border: solid 1px #2192a6;
+  color: #fff;
+}
+
+.na-bt:focus {
+  outline: none;
+}
+
+.ui-slider-float.disabled {
+  opacity: 0.4;
+}
+
+.header-nav {
+  /* display: inline-block; */
+  display: none;
+  width: 100%;
+}
+
+.back-nav {
+  float: right;
+  cursor: pointer;
+}
+
+.back-nav a {
+  text-decoration: none;
+  color: #6d5f24;
+}
+
+.back-nav {
+  display: inline-block;
+  border: 1px solid #c9ae34;
+  color: #705d07;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: calibri;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+  background-image: linear-gradient(to top, #fce374, #fcdf5b);
+  background-color: #fce374;
+}
+
+.back-nav:hover,
+.back-nav:active {
+  border: 1px solid #967d09;
+  color: #705d07;
+  box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+    inset 0 0 0 1px #fce88d;
+  background-color: #fcdf5b;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .title-toll {
+    width: 95% !important;
+  }
+  #binddata {
+    width: 100%;
+  }
+  #binddata tr td {
+    font-size: 12px !important;
+  }
+  .fl,
+  .fr {
+    font-size: 10px;
+    word-break: break-word;
+    width: 35%;
+  }
+  .ui-slider-handle:before {
+    right: 0px;
+    top: 2px;
+    border-width: 6px 0 3px 8px;
+  }
+  .ui-slider-handle:after {
+    left: 0px;
+    top: 2px;
+    border-width: 6px 8px 3px 0;
+  }
+  .title-toll {
+    width: 90% !important;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+  .fl,
+  .fr {
+    font-size: 11px;
+    word-break: break-word;
+    width: 35%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+.title-toll {
+  width: 98%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+}
+/* .microsoft-title{
+    text-align: center;
+    margin-bottom: 0px;
+} */

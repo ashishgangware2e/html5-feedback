@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Digital</title>
+<link href="css/moduleStyle.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-ui-slider-pips.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+
+var dragAttrclr = "ff0000|f7a30c|fbce45|ffff00|acfb45|92d050|00b050";
+var defaultpos =  4;
+var delay = 30;				/*time in seconds*/
+var totalTime = 1;      /*time in minutes*/
+var strt = "Start";
+var stp = "End";
+var popuptxt = "Are you sure you want to finish?";
+var finishmsg = "Please click the [>>] button to proceed at the bottom";
+function outputValues(data,rate){
+	$("#opt").val(rate);
+	$("#optbox").val(data);
+}
+
+
+</script>  
+</head>
+<body>
+<div class="mainWaper"></div>
+<input type="text" id="opt" value=""  readonly style=""/>
+<input type="text" id="optbox" value=""  readonly style=""/>
+
+</body>
+</html>
+

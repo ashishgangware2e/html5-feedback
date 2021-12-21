@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slider Bar</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/mobulestyle.css" />
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/moduleAcript.js"></script>
+    <script>
+      var statementStr =
+        "LAB WORK 10 DAYS|LAB WORK 5 DAYS|LAB WORK 2 DAYS LAB WORK2 DAYS LAB WORK 2 DAYS|SIMPLE - NURSE";
+      var sliderbarColor = "#3CB15B|#E8D909|#FA8E21|#F82323";
+      var sliderbarValue = "80|40|30|10";
+      var lastFixStatement = "NO TESTING REQUIRED";
+      var scaleText =
+        "Completely unacceptable endpoint|Endpoint exactly as good as the best endpoint";
+      function outputValue(data) {
+        $("#outputdata").val(data);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="slider-warper">
+      <!--<div id="red" class="bind-slider"></div>
+		<div id="green" class="bind-slider"></div>
+		<div id="blue" class="bind-slider"></div>
+		<div id="yallow" class="bind-slider"></div>
+		<div class="clearAll"></div>
+		<div class="lableBlock">
+			<label class="first-label"><span>0</span></label>
+			<label><span>10</span></label>
+			<label><span>20</span></label>
+			<label><span>30</span></label>
+			<label><span>40</span></label>
+			<label><span>50</span></label>
+			<label><span>60</span></label>
+			<label><span>70</span></label>
+			<label><span>80</span></label>
+			<label><span>90</span></label>
+			<label class="last-label"><span>100</span></label>
+			
+			<div class="leftPersentage">%</div>
+			<div class='statmentText-Disable'><span>NO TESTING REQUIRED</span></div>
+		</div>
+		<div class="clearAll"></div>
+		<div class="lableBlocktext">
+			<div class="leftText">Completely unacceptable endpoint</div>
+			<div class="rightText">Endpoint exactly as good as the best endpoint</div>
+		</div>-->
+    </div>
+
+    <input type="text" id="outputdata" name="outputdata" />
+  </body>
+</html>

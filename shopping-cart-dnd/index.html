@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopping Cart Drag and Drop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/styleModule.min.css" />
+    <script src="js/DragnDropScript.js"></script>
+    <script src="js/touch.min.js"></script>
+
+    <script>
+      var productImg =
+        "images/brand01.jpg|images/brand02.jpg|images/brand03.jpg|images/brand04.jpg|images/brand05.jpg|images/brand06.jpg|images/brand07.jpg|images/brand08.jpg|images/brand09.jpg|images/brand10.jpg|images/brand11.jpg|images/brand12.jpg";
+
+      var productLargeImg =
+        "images/brand01.jpg|images/brand02.jpg|images/brand03.jpg|images/brand04.jpg|images/brand05.jpg|images/brand06.jpg|images/brand07.jpg|images/brand08.jpg|images/brand09.jpg|images/brand10.jpg|images/brand11.jpg|images/brand12.jpg";
+
+      var productPrice = "5|4|5|4|5|4|5|4|5|5|4|5|5|4|4";
+      var popupMsg = "PRODUCT LIST IN THE CART";
+      var priceSymbol = "$";
+
+      function outputValue(value) {
+        $("#optBox").val(value);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="respondent-info">
+      Drag and drop the products you would like to buy in the cart
+    </div>
+    <div class="scroll">
+      <div class="mainContainer">
+        <div class="footer">&nbsp;</div>
+      </div>
+    </div>
+    <div class="output-info">
+      <b>Output</b>: Data will show binary numeric rating  (0,1 )for each answer
+      option.
+    </div>
+
+    <input type="hidden" class="optBox" id="optBox" style="width: 300px" />
+  </body>
+</html>

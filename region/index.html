@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>HTML5 UK MAP</title>
+<meta name="author" content="HTML5 Interactive Maps">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/customStyle.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+    //UK
+var noneoftheseForUk="50";
+var btnNoneofDisplay="show";
+var noneofTextForUk="None of these areas";
+var North_East="1";
+var North_West="2";
+var Scotland="3";
+var Yorkshire_and_The_Humberside="4";
+var East_Midlands="5";
+var West_Midlands="6";
+var East_of_England="7";
+var London="8";
+var South_East="9";
+var South_West="10";
+var Wales="11";
+
+function OutputValuesForUk(data){ 
+    $("#getMapValForUk").val(data);
+}
+</script>
+<script type="text/javascript">
+    //Ireland
+    var noneoftheseForIre="50";
+    var btnNoneofDisplay="show";
+    var noneofTextForIre="None of these areas";
+    var donegal="1";
+    var leitrim="2";
+    var sligo = "3";
+    var cavan ="4";
+    var Monaghan="5";
+    var cork="6";
+    var louth ="7";
+    var dublin ="8"
+    var meath ="9";
+    var westmeath ="10";
+    var longford ="11";
+    var roscommon ="12";
+    var mayo ="13";
+    var galway ="14";
+    var offaly ="15";
+    var kildare ="16";
+    var wicklow ="17";
+    var wexford ="18";
+    var waterford ="19";
+    var kerry = "20";
+    var limerick ="21";
+    var tipperary ="22";
+    var kilkenny ="23";
+    var clare ="24";
+    var laois ="25";
+    var garlow ="26";
+
+    function OutputValuesForIre(data){ 
+    $("#getMapValForIre").val(data);
+}
+</script>
+</head>
+<body> 
+    <div class="title-toll">
+        Which region are you most interested to visit?​
+      </div>
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label for="tab-btn-1">UK</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label for="tab-btn-2">Ireland</label>    
+        <div id="content-1">
+            <div id="htmlComp" class="UKmapContainer"></div>    
+        </div>
+        <div id="content-2">
+            <div class="IremapContainer" id="svgfile"></div>
+        </div>
+    </div>
+    <div class="respondent-info">
+        <b>Output:</b> Data will show text label for each selected part.​
+      </div>
+	<input type="hidden" id="getMapValForUk" name="getMapVal" />
+	<input type="hidden" id="getMapValForIre" name="getMapVal" value="0"/>
+    <script src="js/scriptMap.js"></script>   
+    <script src="js/handlerScript.js" type="text/javascript"></script> 
+    <script src="js/script.js"></script>     
+</body>
+</html>

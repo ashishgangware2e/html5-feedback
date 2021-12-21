@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Book</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="css/Custome-style.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/docs.min.css" rel="stylesheet" type="text/css"/>
+<style>
+	.header-nav {
+    /* display: inline-block; */
+    display: none;
+    width: 100%;
+}
+	.back-nav{
+		float: right;
+		cursor: pointer;
+	}
+	.back-nav a{
+		text-decoration: none;      
+		color: #6d5f24;          
+	}
+	.back-nav{
+		display: inline-block;
+		border:1px solid #c9ae34;
+		color: #705D07;
+		border-radius: 3px 3px 3px 3px;
+		-webkit-border-radius: 3px 3px 3px 3px;
+		-moz-border-radius: 3px 3px 3px 3px;
+		font-size: 14px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		font-family: calibri;
+		padding: 10px 20px;
+		margin: 10px;
+		box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+		-moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+		-webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+		background-image: linear-gradient(to top, #fce374, #fcdf5b);
+		background-color: #fce374;
+	}
+	.back-nav:hover, .back-nav:active{
+		border:1px solid #967d09;
+		color: #705D07;
+		box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+		-moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+		-webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+		background-color: #fcdf5b;
+	}
+	
+.title-toll {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+  line-height: 25px;
+}
+  </style>
+</head>
+<body>
+
+	<div class="title-toll">
+Please tell us a story about a successful experience you had with a particular hormonal IUS brand, for a specific patient. Please tell us why you switched the patient from another form of contraception to this hormonal IUS brand.
+	</div>
+ <div class="respondent-info ">Open the story book by clicking on next and provide your inputs </div>
+<div class="pace-overlay"></div>
+<div id="canvas" class="bgClass first-page">
+  <div id="book-zoom">
+    <div class="sample-docs">
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/firstScreen.png'); background-color: #fff;">
+        <div class="story-container hHeight">
+          <div class="story-title">
+            <h1 id="frheading1" class="once_upon">Case Story</h1>
+            <!-- <h1 id="frheading2" class="once_upon">A Time</h1> -->
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page1bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>The main characters</h2>
+            <p class="page-no-01">Describe the Patient 
+            	<u>Age, previous contraception method, previous pregnancies, education, anything unique about this patient</u>
+            </p>
+            <textarea name="" class="textStory p1_1" data-page="p_1" autocomplete="off" autocorrect="off" autocapitalize="off" ></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page2bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>&nbsp;</h2>
+            <p class="page-no-01">Describe yourself
+            	<u>Please add anything you feel is relevant here to the story</u>
+            </p>
+            <textarea name="" class="textStory p2" data-page="p_2"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page1bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>Part 1 - A Challenge Arises</h2>
+            <p>One day I realized contraception (i.e. the method used before IUS placement)</p>
+            <textarea name="" id="story01" class="textStory2 p3_1" data-page="p_3"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+            <p>Was no longer the right option for this patient because</p>
+            <textarea name="" class="textStory2 p3_2" data-page="p_3"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page2bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>Part 2 - Your journey to decision</h2>
+            <p>My options were</p>
+            <textarea name="" id="story01" class="textStory2 p4_1" data-page="p_4"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+            <p>I wondered if
+            </p>
+            <textarea name="" class="textStory2 p4_2" data-page="p_4" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page1bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>Part 3 - Current Day</h2>
+            <p>So I put this patient on the hormonal IUS Brand</p>
+            <textarea name="" id="story01" class="textStory2 p5_1" data-page="p_5" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+            <p>At last I am able to</p>
+            <textarea name="" class="textStory2 p5_2" data-page="p_5"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="MainPage-blk" style="background:#8e5a2a url('pics/page2bg.png'); background-color: transparent;">
+        <div class="story-container">
+          <div class="story-title">
+            <h2>&nbsp;</h2>
+            <p>And the patient is able to</p>
+            <textarea name="" class="textStory2 p6_1" data-page="p_6" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+            <p>So I feel like</p>
+            <textarea name="" class="textStory2 p6_2 lastcl" data-page="p_6"  autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <span class="validationtext">This field is required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="text-center">
+	<div id="controls" class="nxtbackBtn">
+    <a id="previous" href="javascript:void(0)" class="btnPrev">
+    <img src="pics/backBtn.png">
+  </a> 
+  <a id="next" href="javascript:void(0)" class="btnNext">
+    <img src="pics/nextBtn.png">
+  </a>
+</div>
+</div>
+<div class="output-info"><b>Output</b>: Data export will show the entire verbatim entered</div>
+
+<img src="pics/mainBG.png" alt="" style="width: 0; height: 0"> 
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script> 
+<script type="text/javascript" src="js/pace.min.js"></script> 
+<script type="text/javascript" src="js/turn.min.js"></script> 
+<script type="text/javascript">
+var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
+$(document).ready(function(){
+//var value;
+var pageNumber ="1";
+var spaceCount = 0;
+var textAreap1_1 = "";
+var textAreap1_2 = "";
+var textAreap2 = "";
+var textAreap3_1 = "";
+var textAreap3_2 = "";
+var textAreap4_1 = "";
+var textAreap4_2= "";
+var textAreap5_1 = "";
+var textAreap5_2 = "";
+var textAreap6_1 = "";
+var textAreap6_2 = "";
+	function textareaval(){
+		$('.p1_1').val(textAreap1_1);
+		$('.p1_2').val(textAreap1_2);
+		$('.p2').val(textAreap1_2);
+		$('.p3_1').val(textAreap3_1);
+		$('.p3_2').val(textAreap3_2);
+		$('.p4_1').val(textAreap4_1);
+		$('.p4_2').val(textAreap4_2);
+		$('.p5_1').val(textAreap5_1);
+		$('.p5_2').val(textAreap5_2);
+		$('.p6_1').val(textAreap6_1);
+		$('.p6_2').val(textAreap6_2);
+	};
+	textareaval();
+if (isIE){
+	$("#frheading1").removeClass('once_upon').addClass('ie_once_upon');
+	$("#frheading2").removeClass('once_upon').addClass('ie_once_upon');
+}else{
+	$("#frheading1").removeClass('ie_once_upon').addClass('once_upon');
+	$("#frheading2").removeClass('ie_once_upon').addClass('once_upon');
+}
+	
+	var turnObj = $(".sample-docs").turn({  
+		elevation: 50,
+		acceleration: false,
+		gradients: true,
+		autoCenter: true,
+		duration: 1000,
+		//'display':'single',
+		"page": pageNumber,
+		pages: $(this).turn('pages'),
+		direction: 'ltr',
+        when: {
+            last: function () {
+                return $("body").toggleClass("last");
+				
+            },
+            start: function (event, pageObject, corner) {
+                if (corner != null) {
+                    $(this).turn('data').hover = true;
+                    return event.preventDefault();
+                }
+            },
+            turning: function (event, page, newView) {
+                if ($(this).turn('data').hover) {
+                    $(this).turn('data').hover = false;
+                    event.preventDefault();
+                }
+            }
+        }
+ 
+	
+	});
+	
+	
+		if( $( window ).width() <=420 ){
+			//turnObj.turn('display', 'single');
+		}
+    
+		
+		//$(window).resize(function(){
+		  //turnObj.turn('pages',1);
+		  //alert("dd");
+			//location.reload();
+		//});	
+
+	if (parseInt(pageNumber)>1){
+		$("#canvas").removeClass("first-page");
+		$(".info-text").hide();
+	}
+	
+	
+	$(document).on('click','#next',function(e){
+		//e.preventDefault()
+		//if(parseInt(pageNumber)>1){
+			$(".info-text").hide();
+		//}
+		
+		var $pages = turnObj.turn('view');
+		if(turnObj.turn('page')!=1){
+			var $cstatus = false;
+			$('[data-page=p_'+($pages[0]-1)+']').each(function(){
+				$(this).next('.validationtext').css('visibility','hidden')
+				if($(this).val()=='' ){
+					$cstatus = false;
+					$(this).next('.validationtext').css('visibility','visible')
+					return false;
+				}else{
+					$cstatus = true;
+					$(this).next('.validationtext').css('visibility','hidden')
+				}
+			})			
+			if($cstatus==true){
+				$('[data-page=p_'+($pages[1]-1)+']').each(function(){
+					$(this).next('.validationtext').css('visibility','hidden')
+					if($(this).val()=='' ){
+						$cstatus = false;
+						$(this).next('.validationtext').css('visibility','visible')
+						return false;
+					}else{
+						$cstatus = true;
+						$(this).next('.validationtext').css('visibility','hidden');
+					}
+				})
+			}
+
+			if($cstatus == true){				
+				turnObj.turn('next');	
+				if(turnObj.turn('page')==(turnObj.turn("pages"))){					
+					//$("#forwardbutton").trigger('click');
+					//alert("sds")
+					if( !$(".lastcl").val()==''){
+						//alert("sd")
+						$("#forwardbutton").trigger('click');
+					}
+				}
+				
+			}else{
+				return false
+			}
+		}			
+		if(turnObj.turn('page')==1){
+				turnObj.turn('next');
+		}
+		if(turnObj.turn('page')==1){
+			/*}else if(turnObj.turn('page')==(turnObj.turn("pages")-1)){
+				$('#canvas').addClass('last-page')*/
+			}else{
+				$('#canvas').removeClass('first-page last-page')
+			}
+		
+	 });
+	 $(document).on('click','#previous',function(e){
+		  e.preventDefault()
+		  turnObj.turn('previous');
+		 if(turnObj.turn('page')==1){
+				$('#canvas').addClass('first-page')
+			}else if(turnObj.turn('page')==(turnObj.turn("pages")-1)){
+				$('#canvas').addClass('last-page')
+			}else{
+				$('#canvas').removeClass('first-page last-page')
+			}
+		 e.preventDefault()
+	 });
+
+window.addEventListener("orientationchange", function() {                   
+    if (window.matchMedia("(orientation: portrait)").matches) {
+      location.reload()
+       //turnObj.turn('display', 'single'); 
+       //alert("portrait")      
+     }
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      location.reload()
+      //turnObj.turn('display', 'single');
+      //alert("landscape")
+     }
+  }, false);  
+
+});
+$(function() {
+	
+  $('body').on('keydown', 'textarea', function(e) {
+    if (e.which === 32 &&  e.target.selectionStart === 0) {
+      return false;
+    }  
+  });
+});
+</script>
+</body>
+</html>

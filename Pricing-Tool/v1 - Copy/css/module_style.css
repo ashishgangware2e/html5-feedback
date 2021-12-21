@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none; color:#25698e;}
+a:hover{text-decoration:underline; color:#154C6A;}
+.clearAll{clear:both;}
+html, body {}
+*{margin:0px; padding:0px;}
+body{font-family:arial; font-size:14px; margin:0px; padding:0px;}
+
+.toolWapper{width:99%; min-height:250px; margin:0px auto; padding:8px; position:relative; font-family:arial; /*-webkit-box-shadow: 0px 0px 8px 0px rgba(59,56,59,1); -moz-box-shadow: 0px 0px 8px 0px rgba(59,56,59,1); box-shadow: 0px 0px 8px 0px rgba(59,56,59,1);*/ overflow:hidden;}
+.toolWapper .fromTarget{width:100%; float:left; height:100px; display:table; text-align:center;}
+.toolWapper .fromTarget .setMiddle{width:300px; height:100px; display:inline-block; vertical-align:middle; position:relative;}
+.toolWapper .fromTarget .setMiddle .blockElments{width:100%; float:left; padding:4px;}
+.borderBox{border:2px solid #848484; color: #858585; width:100%; position:absolute; left:0px; top:10px; box-sizing: border-box; text-align:center; background:#FFFFFF; font-size: 20px; padding:4px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 0-box-sizing: border-box;}
+.margin_bottom{margin-bottom:10px;}
+.countBox{width:100%; position:absolute; left:0px; box-sizing: border-box; text-align:center; background:#FFFFFF; font-size: 20px; padding:4px; color: #858585; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 0-box-sizing: border-box;}
+.margin_bottom{margin-bottom:10px;}
+
+.toolWapper .toTarget{width:600px; height:30px; margin:0px auto; position:relative; margin-top:60px; border-bottom:4px solid #40B72D; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 0-box-sizing: border-box;}
+
+.toolWapper .toTarget .clickableArea{width:99.4%; height:100%; bottom: -10px; float: right; padding:0px; position:relative; cursor:crosshair; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 0-box-sizing: border-box; cursor:crosshair;
+cursor: url(../images/pointer_v2.png) 19 19, crosshair; z-index: 12;}
+.toolWapper .toTarget .clickableArea .knob{width:18px; height:18px; z-index: 11; position:absolute; cursor:default; background:url(../images/knob_icon.png) no-repeat;}
+
+/*.leftTopPosetive{position:absolute; width:50px; text-align:right; top:0px; left:-58px; cursor:default;}
+.leftBottomNegative{position:absolute; width:50px; text-align:right; bottom:0px; left:-58px; cursor:default;}*/
+.bottomRightNegative{position:absolute; width:80px; top:10px; text-align:center; right:-82px;  cursor:default; word-wrap: break-word;}
+.BottomleftPosetive{position:absolute; width:80px; text-align:center; top:10px; left:-84px; cursor:default; word-wrap: break-word;}
+
+.borderBox{top:45px;}
+.countBox{top:5px;}
+.clearAll{clear:both;}
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(151, 150, 150, 0.6);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .4s linear;
+	-webkit-animation: rippleDrop .4s linear;
+	-moz-animation: rippleDrop .4s linear;
+	-o-animation: rippleDrop .4s linear;
+	-ms-animation: rippleDrop .4s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(.5);
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	-o-transform: scale(.5);
+	-ms-transform: scale(.5);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rippleDrop {
+  100% {
+    transform: scale(.5);
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	-o-transform: scale(.5);
+	-ms-transform: scale(.5);
+    opacity: 0;
+  }
+}
+@-moz-keyframes rippleDrop {
+  100% {
+    transform: scale(.5);
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	-o-transform: scale(.5);
+	-ms-transform: scale(.5);
+    opacity: 0;
+  }
+}
+@-o-keyframes rippleDrop {
+  100% {
+    transform: scale(.5);
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	-o-transform: scale(.5);
+	-ms-transform: scale(.5);
+    opacity: 0;
+  }
+}
+@-ms-keyframes rippleDrop {
+  100% {
+    transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+
+.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; font-size: 12px;}
+.tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+.tipsy-arrow { position: absolute; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+
+
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 320px) and (max-width:420px){
+.toolWapper{width:96%; padding:0px;}
+.toolWapper .toTarget{width:290px;}
+.toolWapper .toTarget .clickableArea{width:98.69%; height:100%; bottom: -12px; float:left;}
+.bottomRightNegative{top:35px; right:-1px; text-align:right;}
+.BottomleftPosetive{top:35px;left:-1px; text-align:left;}
+.toolWapper .fromTarget .setMiddle{width:290px;}
+.toolWapper .toTarget .clickableArea .knob{width:11px; height:12px; background-size: 120% 120%;}
+}
+@media screen and (min-width: 421px) and (max-width: 768px){
+.toolWapper{width:96%; padding:0px;}
+.toolWapper .toTarget{width:400px;}
+.toolWapper .toTarget .clickableArea{width:98.69%; height:100%; bottom: -12px; float:left;}
+.bottomRightNegative{top:35px; right:-1px; text-align:right;}
+.BottomleftPosetive{top:35px;left:-1px; text-align:left;}
+.toolWapper .toTarget .clickableArea .knob{width:15px; height:15px; background-size: 100% 100%;}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px){
+.toolWapper{width:96%; padding:3px;}
+.toolWapper .toTarget{width:600px;}
+.toolWapper .toTarget .clickableArea{width:98%; height:100%;}
+.bottomRightNegative{top:35px!important; right:-1px; text-align:right;}
+.BottomleftPosetive{top:35px!important;left:-1px; text-align:left;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1132px){
+.toolWapper .toTarget .clickableArea{width:99.4%; height:100%; float: right;}
+}
+@media screen and (min-width: 1133px) and (max-width: 1600px){
+.toolWapper{width:100%;}
+.toolWapper .toTarget{width:600px;}
+.toolWapper .toTarget .clickableArea{width:98%; height:100%; float: right;}
+}
+@media screen and (min-width: 1601px) and (max-width: 1900px){
+.toolWapper{width:100%;}
+.toolWapper .toTarget{width:600px;}
+.toolWapper .toTarget .clickableArea{width:98%; height:100%; float: right;}
+}
+@media screen and (min-width: 1901px) and (max-width: 2400px){
+.toolWapper{width:100%;}
+.toolWapper .toTarget{width:600px;}
+.toolWapper .toTarget .clickableArea{width:98%; height:100%; float: right;}
+}
+

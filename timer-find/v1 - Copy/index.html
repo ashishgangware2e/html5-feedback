@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer Find​</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/timerfind.js"></script>
+    <link href="css/timerfind.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.imageLens.js"></script>
+
+    <script>
+      var nSingleSelection = 1;
+      var dislikeStr = "I don't like any aspects"; //Like\dislike String
+      var dislikeStr2 = "Magnifier"; //String for Magnifier
+      var noneValue = "99"; //value for the Don't Click button
+      var imgrate = "images/Route3.png"; //path for small Images
+      var imgLarge = "images/Route3_large.png"; //path for large Images
+      var selectColor = "images/selectIcon01.png"; //path for selection bkgd Images
+      var imageWidth = "800";
+      var imageHeight = "558";
+      var timeCount = 4; //Timer Set
+
+      var widthArr = [
+        177, 126, 126, 126, 126, 118, 177, 125, 125, 125, 120, 120, 177, 126,
+        126, 126, 120, 112, 189, 108, 138, 148, 128, 83,
+      ];
+      var heightArr = [
+        119, 119, 119, 119, 119, 119, 103, 103, 103, 103, 103, 103, 103, 103,
+        103, 103, 103, 103, 147, 144, 134, 134, 134, 134, 134,
+      ];
+      var topArr = [
+        53, 53, 53, 53, 53, 53, 178, 178, 178, 178, 178, 178, 298, 298, 298,
+        298, 298, 298, 397, 408, 407, 407, 401, 401,
+      ];
+      var leftArr = [
+        1, 180, 306, 432, 562, 682, 1, 181, 307, 430, 559, 679, 1, 181, 308,
+        435, 565, 686, 1, 191, 302, 441, 591, 717,
+      ];
+
+      //dntLike2
+      function outputValue(data1, data2) {
+        $("#result").val(data1);
+        $("#result1").val(data2);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="title-toll">
+      In a moment, you will see an image of a store shelf and you will be asked
+      to find a specific brand. Find the brand and click on it as quickly as you
+      can.
+    </div>
+    <div class="scroll">
+      <div class="mainWaper"></div>
+    </div>
+    <div class="output-info">
+      <b>Output</b>: Data will show a continuous number of seconds
+    </div>
+    <input type="hidden" id="result" class="resultval" />
+    <input type="hidden" id="result1" class="resultTime" />
+  </body>
+</html>

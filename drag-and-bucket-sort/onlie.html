@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Bucket Sort</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/css/jquery-ui.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/css/drag-&-bucket-sort.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/css/popup.css"
+    />
+    <script src="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/js/jquery.min.js"></script>
+    <script src="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/js/jquery-ui.min.js"></script>
+    <script src="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/js/touch.min.js"></script>
+    <script src="https://e2eresearch.com/swteam/engame/drag-and-bucket-sort/js/drag-&-bucket-sort.js"></script>
+    <script
+      type="text/javascript"
+      src="https://e2eresearch.com/swteam/engame/base-url.js"
+    ></script>
+    <script>
+      var questions =
+        "Use social media (Facebook, twitter etc.) on mobile|Use Social media (Facebook, twitter etc.) on laptop / desktop computer|Use professional networking sites (Linkedin, Slideshare etc.) on mobile|Use professional networking sites (Linkedin, Slideshare etc.) on laptop / desktop computer|Read news / newspapers online on mobile|Read news / newspapers online on laptop / desktop computer";
+      var randomization = "1";
+      var containerText =
+        "All the time ~ (a few times a day/once a day/most print issues) | Quite Often ~ (2-3 times a week /once a week/every other print issue) | Only occasionally ~ (once a fortnight/once a month/one print issue a month) |Never";
+      var client_key = "*secratekey*";
+      function outputValue(data, data2) {
+        $("#outputVal").val(data);
+        $("#comVal").val(data2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="title-toll">
+      Please drag each type of media into the box that best represents how often
+      you read it.​
+    </div>
+    <div id="drag-bucket-sort" class="container"></div>
+    <div class="output-info">
+      <b>Output</b>:Data will show categorical or numeric value for each item.
+    </div>
+    <input type="hidden" id="outputVal" name="outputVal" />
+    <input type="hidden" id="comVal" name="comVal" />
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snowman</title>
+<link href="css/snowman-style.min.css" rel="stylesheet" type="text/css"/>
+<style>
+  .header-nav {
+    /* display: inline-block; */
+    display: none;
+    width: 100%;
+}
+  .back-nav{
+      float: right;
+      cursor: pointer;
+  }
+  .back-nav a{
+      text-decoration: none;      
+      color: #6d5f24;          
+  }
+  .back-nav{
+      display: inline-block;
+      border:1px solid #c9ae34;
+      color: #705D07;
+      border-radius: 3px 3px 3px 3px;
+      -webkit-border-radius: 3px 3px 3px 3px;
+      -moz-border-radius: 3px 3px 3px 3px;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-family: calibri;
+      padding: 10px 20px;
+      margin: 10px;
+      box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+      -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+      -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+      background-image: linear-gradient(to top, #fce374, #fcdf5b);
+      background-color: #fce374;
+  }
+  .back-nav:hover, .back-nav:active{
+      border:1px solid #967d09;
+      color: #705D07;
+      box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+      -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+      -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+      background-color: #fcdf5b;
+  }
+  .title-toll {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+  line-height: 25px;
+}
+
+</style>
+</head>
+<body>
+ 
+<div class="title-toll">
+ Now please think about using pill X. How would you summarise the more rational/logical reasons for using and also the less rational/emotional reasons for using it? Please use this simple image of a snowman as a way to help you to think: Add the more rational/logical reasons for usingnext to the head of the snowman. Add the less rational/emotional reasons for using next to the heart of the snowman.
+</div>
+    <div class="respondent-info ">Provide you response in the boxes below</div>
+
+<div class="snowman-container">
+  <div class="resize-container">
+     <!-- message left chat -->
+      <div class="mess-l">
+        <div class="msg-container orange-top">
+          <div class="chat-conatiner o-line">
+              <div class="question">Less rational/logical reasons?</div>
+              <textarea class="orange" placeholder="Please answer here.."></textarea>
+          </div>
+        </div>
+        <div class="msg-container eastern-top">
+          <div class="chat-conatiner pantone-line">
+              <div class="question">Less rational/logical reasons?</div>
+              <textarea class="eastern-blue" placeholder="Please answer here.."></textarea>
+          </div>
+        </div>
+      </div>
+        <!-- message left chat end -->
+      <div class="snowman">&nbsp;</div>
+       <!-- message right chat begin -->
+      <div class="mess-r">
+        <div class="msg-container light-red-top">
+          <div class="chat-conatiner r-line">
+              <div class="question">More rational/logical reasons?</div>
+              <textarea class="light-red" placeholder="Please answer here.."></textarea>
+          </div>
+        </div>
+        <div class="msg-container light-blue-top">
+            <div class="chat-conatiner b-line">
+                <div class="question">More rational/logical reasons?</div>
+                <textarea class="blue-light" placeholder="Please answer here.."></textarea>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="output-info"><b>Output</b>: Data export will show the entire verbatim entered</div>
+
+</body>
+</html>

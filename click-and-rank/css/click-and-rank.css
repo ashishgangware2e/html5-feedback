@@ -1,0 +1,632 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #25698e;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #154c6a;
+}
+
+.clearAll {
+  clear: both;
+}
+
+body {
+  font-family: arial;
+  font-size: 14px;
+}
+
+.toolWapper {
+  width: 99%;
+  min-height: 345px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.toolWapper .fromTarget {
+  width: 100%;
+  height: 200px;
+  display: table;
+  text-align: center;
+}
+
+.toolWapper .fromTarget .setMiddle {
+  width: 300px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.toolWapper .fromTarget .setMiddle .blockElments {
+  width: 100%;
+  padding: 4px;
+}
+
+.borderBox {
+  color: #858585;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  text-align: center;
+  background: #ffffff;
+  font-size: 20px;
+  transition: transform 1s ease;
+}
+.respondent-info {
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 0 15px 30px 15px;
+  background: #f5f5f5;
+}
+.margin_bottom {
+  margin-bottom: 10px;
+}
+
+.countBox {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  background: #ffffff;
+  font-size: 20px;
+  padding: 4px;
+  color: #858585;
+}
+
+.margin_bottom {
+  margin-bottom: 10px;
+}
+
+.toolWapper .toTarget {
+  width: 600px;
+  height: 22px;
+  margin: 0px auto;
+  position: relative;
+  margin-top: 60px;
+}
+
+.toolWapper .toTarget .clickableArea {
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  float: right;
+  padding: 0px;
+  position: relative;
+  cursor: crosshair;
+  cursor: url(../images/pointer_v2.png) 19 19, crosshair;
+  z-index: 12;
+}
+
+/* .toolWapper .toTarget .clickableArea{width:100%; height:100%; top: -5px; float: right; padding:0px; position:relative; 
+   z-index: 12; cursor: url('../images/pointer_v2.png'), auto!important;} */
+
+.toolWapper .toTarget .clickableArea .knob {
+  width: 29px;
+  height: 24px;
+  z-index: 11;
+  position: absolute;
+  cursor: default;
+  background: #0080dc;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 20px 0px rgba(51, 51, 51, 0.2);
+}
+
+.bottomRightNegative {
+  position: absolute;
+  width: 80px;
+  top: 18px;
+  text-align: right;
+  right: 2px;
+  cursor: default;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  color: #848585;
+}
+
+.BottomleftPosetive {
+  position: absolute;
+  width: 80px;
+  text-align: left;
+  top: 18px;
+  left: -6px;
+  cursor: default;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  color: #848585;
+}
+
+.borderBox {
+  top: 45px;
+}
+
+.countBox {
+  top: 5px;
+}
+
+.blockElments:after,
+.blockElments:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.textValue {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Layer_2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 13px;
+  width: 100%;
+}
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(151, 150, 150, 0.6);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+
+.rippleEffect {
+  animation: rippleDrop 0.4s linear;
+  -webkit-animation: rippleDrop 0.4s linear;
+  -moz-animation: rippleDrop 0.4s linear;
+  -o-animation: rippleDrop 0.4s linear;
+  -ms-animation: rippleDrop 0.4s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rippleDrop {
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rippleDrop {
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rippleDrop {
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rippleDrop {
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.tipsy {
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 100000;
+  font-size: 12px;
+}
+
+.tipsy-inner {
+  padding: 5px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+}
+
+.tipsy-inner {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.tipsy-arrow {
+  position: absolute;
+  width: 9px;
+  height: 5px;
+}
+
+.tipsy-n .tipsy-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+}
+
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+}
+
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left;
+}
+
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  background-position: bottom left;
+}
+
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  background-position: bottom left;
+}
+
+.tipsy-e .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  width: 5px;
+  height: 9px;
+  background-position: top right;
+}
+
+.tipsy-w .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+  width: 5px;
+  height: 9px;
+}
+
+/* Desktops and laptops ----------- */
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .toolWapper {
+    width: 96%;
+  }
+  .toolWapper .toTarget {
+    width: 290px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 98.69%;
+    height: 100%;
+    bottom: -12px;
+    float: left;
+  }
+  .bottomRightNegative {
+    top: 25px;
+    right: -1px;
+    text-align: right;
+  }
+  .BottomleftPosetive {
+    top: 25px;
+    left: -1px;
+    text-align: left;
+  }
+  .toolWapper .fromTarget .setMiddle {
+    width: 300px;
+  }
+  .toolWapper .toTarget .clickableArea .knob {
+    width: 22px;
+    height: 20px;
+    top: 1px;
+    /* background-size: 120% 120%; */
+  }
+  .borderBox {
+    width: 80%;
+    left: 10%;
+  }
+  .borderBox .textValue {
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .toolWapper {
+    width: 96%;
+  }
+  .toolWapper .toTarget {
+    width: 400px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+    bottom: -12px;
+    float: left;
+  }
+  .bottomRightNegative {
+    top: 35px;
+    right: -1px;
+    text-align: right;
+  }
+  .BottomleftPosetive {
+    top: 35px;
+    left: -1px;
+    text-align: left;
+  }
+  /* .toolWapper .toTarget .clickableArea .knob{width:15px; height:15px; background-size: 100% 100%;} */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .toolWapper {
+    width: 96%;
+  }
+  .toolWapper .toTarget {
+    width: 600px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+  }
+  .bottomRightNegative {
+    top: 35px !important;
+    right: -1px;
+    text-align: right;
+  }
+  .BottomleftPosetive {
+    top: 35px !important;
+    left: -1px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1132px) {
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1133px) and (max-width: 1600px) {
+  .toolWapper {
+    width: 100%;
+  }
+  .toolWapper .toTarget {
+    width: 600px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1900px) {
+  .toolWapper {
+    width: 100%;
+  }
+  .toolWapper .toTarget {
+    width: 600px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1901px) and (max-width: 2400px) {
+  .toolWapper {
+    width: 100%;
+  }
+  .toolWapper .toTarget {
+    width: 600px;
+  }
+  .toolWapper .toTarget .clickableArea {
+    width: 100%;
+    height: 100%;
+    float: right;
+  }
+}
+
+.zoom {
+  transform: scale(0);
+}
+
+/*loading css*/
+
+.loadingscreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+}
+
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lds-default div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 29px;
+  left: 53px;
+}
+
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 18px;
+  left: 50px;
+}
+
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 9px;
+  left: 41px;
+}
+
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 6px;
+  left: 29px;
+}
+
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 9px;
+  left: 18px;
+}
+
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 18px;
+  left: 9px;
+}
+
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 29px;
+  left: 6px;
+}
+
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 41px;
+  left: 9px;
+}
+
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 50px;
+  left: 18px;
+}
+
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 53px;
+  left: 29px;
+}
+
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 50px;
+  left: 41px;
+}
+
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 41px;
+  left: 50px;
+}
+
+@keyframes lds-default {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.dcounter {
+  color: #0080dc;
+  text-decoration: underline;
+}
+
+.title-toll {
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+  line-height: 25px;
+}

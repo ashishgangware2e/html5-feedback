@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/vertical-multi-slider.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="css/vertical-multi-slider.min.css"
+      type="text/css"
+    />
+    <title>Vertical Multi Slider</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var statementText = "Passionate|Approachable|Reliable|Ambitious";
+      var leftlebalValue = [
+        "Disagree Strongly",
+        "",
+        "",
+        "",
+        "",
+        "Neither",
+        "",
+        "",
+        "",
+        "",
+        "Agree Strongly",
+      ];
+      var statementPrecode = "4|2|1|3";
+      var sliderMin = 0;
+      var sliderMax = 100;
+      var startFrom = 10;
+      var stepLabel = 10;
+
+      function outputVal(data) {
+        $("#outputValue").val(data);
+      }
+    </script>
+
+    <div class="title-toll">
+      Drag the bar up or down to show how you would rate the President of your
+      local association on each of these characteristics.
+    </div>
+    <div class="respondent-info">
+      Drag the bar to the top if you agree strongly. Or, leave it at the bottom
+      if you disagree strongly. You may change your rating by clicking again.
+    </div>
+
+    <div id="binddata" width="100%"></div>
+
+    <input
+      type="hidden"
+      id="outputValue"
+      name="outputValue"
+      style="width: 90%"
+    />
+  </body>
+</html>

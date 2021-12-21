@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emo Target</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/brandTrackingModule.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        var Brandtxt = "";
+        var backImage = "";
+        var drgAttr = "|||";
+        // var drgAttr = "Disrupter|Sophisticated|Commanding|Dynamic";
+        var dragAttrTxt = "Dissatisfied|Dissatisfied|Dissatisfied|Dissatisfied";
+        var dragAttrImg = "";
+        var precode = "2|1|3|4";
+        var Item = "Item";
+        var of = "of";
+        var dragAftrDrp = 4;//1 hide everything //2 show x //3 show x and text non movable // 4 show x and text with movable
+        var animateTimer= 1000;
+        var dargText="CLICK ON THE TARGET AREA";
+
+        //For backpunch data
+        var backpunch = false;
+        var outputsvalue = "";
+        var positions = "";
+
+        function outputValues(datas) {
+            $("#outputs").val(datas);
+        }
+        function outBackpunch(data) {
+            $(".positions").val(data);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper row-of-icons"> </div>
+    <input type="hidden" class="" id="outputs" name="" style="width:80%; " />
+    <input type="hidden" class="positions" style="width:80%; " />
+</body>
+
+</html>

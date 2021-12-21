@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Target</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/brandTrackingModule.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-touch-punch.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        var Brandtxt = "";
+        var backImage = "";
+        var drgAttr = "Disrupter|Sophisticated|Commanding|Dynamic";
+        // var drgAttr = "Disrupter|Sophisticated|Commanding|Dynamic";
+        var dragAttrTxt = "Displaces what is existing in the market with a game changing concept.|Appears to be cultured, sleek and designed with great skill.|Is seen as powerful and trustworthy; embodying confidence and taking charge.|A force that stimulates change or progress.";
+        var dragAttrImg = "";
+        var precode = "2|1|3|4";
+        var Item = "Item";
+        var of = "of";
+        var dragAftrDrp = 4;//1 hide everything //2 show x //3 show x and text non movable // 4 show x and text with movable
+        var animateTimer= 1000;
+
+        //For backpunch data
+        var backpunch = false;
+        var outputsvalue = "74,70,62,62";
+        var positions = "45%:11%,82%:57%,49%:79%,17%:46%";
+
+        function outputValues(datas) {
+            $("#outputs").val(datas);
+        }
+        function outBackpunch(data) {
+            $(".positions").val(data);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper row-of-icons">
+
+        <div class="leftdiv"></div>
+
+        <div class="maindiv">
+            <!-- <div class="heart-image"></div> -->
+            <div class="rightdiv" id="targetdiv"><span class="txtSpan"></span></div>
+        </div>
+
+    </div>
+    <input type="text" class="" id="outputs" name="" style="width:80%; margin-top:20px;border:1px solid rgba(0, 0, 0, 0.27)" />
+    <input type="text" class="positions" style="width:80%; margin-top:20px;border:1px solid rgba(0, 0, 0, 0.27)" />
+</body>
+
+</html>

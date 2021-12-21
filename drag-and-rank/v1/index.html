@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Drag & Rank</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/drag-&-rank.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/drag-&-rank.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+  </head>
+  <body>
+    <script>
+      var dragStr =
+        "Brand 01|Brand 02|Brand 03|Brand 04|Brand 05|Brand 06|Brand 07|Brand 08";
+      var dragWidth = 100;
+      var dragHeight = 90;
+      var dragColor = "#808080";
+      var scaleValue = "1|2|3|4|5";
+      var dropStr = "A|B|C|D|E";
+      var sliderLabel = "Worst|Best";
+      var shufle = 0;
+    </script>
+
+    <div class="title-toll">
+      Place the brands along the scale to indicate how the brands rank for each
+      statement. Make sure the brands do not overlap.
+    </div>
+    <div class="respondent-info">Offers a variety of flavors</div>
+    <div class="dnd-container"></div>
+    <div class="output-info">
+      <b>Output</b>: Data will show a discrete numeric rank for each item.
+    </div>
+    <input type="hidden" id="Q48HTML_1" />
+  </body>
+</html>

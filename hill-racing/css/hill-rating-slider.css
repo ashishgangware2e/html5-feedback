@@ -1,0 +1,284 @@
+body {
+  font-family: arial;
+  font-size: 16px;
+  color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.respondent-info {
+  /* display: none; */
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 30px auto;
+  background: #f5f5f5;
+  text-align: left;
+  width: 42%;
+}
+
+.output-info {
+  /* display: none; */
+  padding: 10px 15px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin: 10px 15px 30px 15px;
+  background: #f5f5f5;
+  width: 42%;
+  margin: 30px auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #ccc;
+  cursor: help;
+}
+
+.clear {
+  clear: both;
+}
+.clear:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ".";
+}
+.toll-container {
+  width: 800px;
+  height: 540px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 20px 3px #d3d3d3;
+}
+canvas {
+  border: none;
+  width: 800px;
+  height: 425px;
+}
+
+#container {
+  height: 540px;
+  background: url("../images/small_bg.png") no-repeat;
+  display: block;
+  width: 805px;
+  position: absolute;
+  overflow: inherit !important;
+  margin: 20px 0;
+}
+.drag {
+  position: absolute;
+  background: url("../images/bar_bg1.png") bottom right repeat-y;
+  width: 58px;
+  left: 170px;
+  top: 18px;
+  cursor: move;
+}
+
+.drag #Ball1 {
+  height: 300px;
+  width: 60px;
+  position: fixed;
+}
+.drag #post1 {
+  top: 90px;
+  left: 270px;
+}
+#element {
+  height: 600px;
+  width: 350px;
+}
+.note_left {
+  position: absolute;
+  top: 435px;
+  left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.note_right {
+  position: absolute;
+  top: 435px;
+  left: 570px;
+  width: 200px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+}
+.midscal_line {
+  position: absolute;
+  top: 403px;
+  left: 386px;
+  width: 3px;
+  height: 13px;
+  background: #000000;
+  display: block;
+}
+/* .scalefrom {
+  position: absolute;
+  top: 420px;
+  width: 15px;
+  left: 60px;
+  font-size: 13px;
+}
+.scaleto {
+  position: absolute;
+  top: 420px;
+  width: 30px;
+  left: 697px;
+  font-size: 13px;
+} */
+.linear-scale {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 66px;
+  padding-right: 80px;
+  position: absolute;
+  width: 100%;
+  top: 416px;
+  font-size: 14px;
+  color: #666;
+}
+.button {
+  width: 101px;
+  height: 51px;
+  background-image: url("../images/button.png");
+  border: 0px;
+  opacity: 0.2;
+  position: absolute;
+  top: 460px;
+  left: 340px;
+  filter: alpha(opacity=20);
+}
+.title-toll {
+  /* display: none; */
+  width: 100%;
+  font-family: Arial;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fbfbfb;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 4px 5px rgba(152, 152, 152, 0.1);
+  margin-bottom: 25px;
+  color: #999;
+  line-height: 25px;
+}
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+  .scroll {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .toll-container {
+    /* width: 100% !important; 
+  }
+  #container {
+    display: block;
+    width: 100%;
+    /* left: -86px; 
+    overflow: inherit !important;
+    margin: 20px 0;
+  }
+  .note_right {
+    position: absolute;
+    top: 435px;
+    left: 559px;
+    width: 162px;
+    text-align: right;
+  }
+  .respondent-info,
+  .output-info {
+    width: 95%;
+  }
+} */
+/* @media screen and (min-width: 481px) and (max-width: 767px) {
+  .scroll {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .toll-container {
+    width: 100% !important;
+  }
+  #container {
+    height: 540px;
+    background: url(../images/small_bg.png) no-repeat;
+    display: block;
+    width: 736px;
+    /* left: -86px;
+    position: relative;
+    overflow: inherit !important;
+    margin: 20px 0;
+  }
+  .note_right {
+    position: absolute;
+    top: 435px;
+    left: 559px;
+    width: 162px;
+    text-align: right;
+  }
+  .respondent-info,
+  .output-info {
+    width: 95%;
+  }
+} */
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .scroll {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  #container {
+    width: 750px;
+    position: relative;
+    overflow: inherit !important;
+    margin: 0px auto;
+  }
+  .note_right {
+    position: absolute;
+    top: 435px;
+    left: 566px;
+    width: 168px;
+    text-align: right;
+  }
+  .respondent-info,
+  .output-info {
+    width: 98%;
+  }
+}

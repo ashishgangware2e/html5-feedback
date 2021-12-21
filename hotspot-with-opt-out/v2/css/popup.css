@@ -1,0 +1,135 @@
+.popup {
+  background: url("../images/craousal_Rating.png") no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+.popup-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.37);
+}
+
+.popup-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 400px;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.popup-iner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  min-height: 200px;
+}
+
+.popup-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.popup-header {
+  font-size: 18px;
+  font-weight: 600;
+}
+.popup-header h5  {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.popup-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+.popup-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 26px;
+  text-align: center;
+}
+.exclamation {
+  animation: ease-out;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: bouncing;
+  transform-origin: center bottom;
+}
+.exclamation svg {
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes bouncing {
+  0%,
+  10%,
+  26%,
+  40%,
+  50%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate(0px, 10px);
+  }
+
+  20%,
+  21% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0px, 2px);
+  }
+
+  35% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0px, 4px);
+  }
+
+  45% {
+    transform: translate(0px, 8px);
+  }
+}
+.trial-version {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  text-align: right;
+  margin-top: 10px;
+}
+.trial-version-text {
+  display: inline-block;
+  background: #f5f3f3;
+  padding: 8px;
+  margin-right: 7px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-size: 12px;
+}
+.trial-version-text span {
+  padding-right: 5px;
+  color: #f15b5b;
+}

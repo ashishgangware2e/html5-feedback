@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Word Highlighter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://e2eresearch.com/swteam/engame/word-highlighter/js/jquery.min.js"></script>
+    <link
+      href="https://e2eresearch.com/swteam/engame/word-highlighter/css/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://e2eresearch.com/swteam/engame/word-highlighter/css/popup.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://e2eresearch.com/swteam/engame/word-highlighter/js/script.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://e2eresearch.com/swteam/html5-widgets-feedbacks/base-url.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var h1 = "Sanitation Instructions";
+      var spanText =
+        "Wash your hands with soap and water </br>regularly.</br> </br>If soap and water is not available, use hand sanitizer with at least 60% alcohol.</br></br>Wash hands before touching eyes, nose and mouth.</br></br>Throw used tissues into closed bins immediately after use.</br></br>Cover your nose and mouth with handkerchief/tissue while sneezing and coughing.</br></br>Avoid mass gathering and crowded places.";
+      var lisTxt = "Protective Measure";
+      var url = "images/protective-measure.png";
+      var client_key = "*secratekey*";
+    </script>
+
+    <div class="title-toll">
+      Please indicate which sanitation instructions are easy to understand and
+      which instructions difficult to understand.
+    </div>
+    <div class="respondent-info">
+      Click on a statement once for "like" or twice for "dislike". Click third
+      time to unselect it.
+    </div>
+    <div class="containerBlock">
+      <h2 id="h1Text"></h2>
+      <div id="spanText"></div>
+      <div id="image"></div>
+      <div id="listTxt"></div>
+    </div>
+    <div class="output-info">
+      <b>Output</b>: Data export will show the resonse provided for each word.
+    </div>
+    <input type="hidden" id="res" style="width: 835px" />
+  </body>
+</html>

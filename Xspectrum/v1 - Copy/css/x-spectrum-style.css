@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #25698e;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #154C6A;
+}
+
+.clearAll {
+    clear: both;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.toolWapper {
+    width: 80%;
+    margin: 0px auto;
+    padding: 8px;
+    position: relative;
+    /* border: 3px solid #6e2cdc; */
+    padding-bottom: 20px;
+}
+
+.toolWapper .target-row {
+    width: 100%;
+    min-height: 200px;
+    display: table;
+    text-align: center;
+}
+.toolWapper .target-row:first-child{height: 30vh;}
+.toolWapper .target-row .setMiddle {
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.toolWapper .target-row .setMiddle .blockElments {
+    width: 100%;
+    float: left;
+    padding: 4px;
+}
+
+.borderBox {
+    border: 2px solid #6e2cdc;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #6e2cdc;
+    font-size: 20px;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    user-select: none;
+	text-align: center;
+    display: table;
+}
+.v-algn{
+	display: table-cell;
+    vertical-align: middle;
+	}
+.margin_bottom {
+    margin-bottom: 10px;
+}
+
+.countBox {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 20px;
+    padding: 4px;
+    color: #858585;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.margin_bottom {
+    margin-bottom: 10px;
+}
+
+.toolWapper .target-row .toTarget {
+    width: calc(100% - 350px);
+    height: auto;
+    margin: 0px auto;
+    position: relative;
+    /* margin-top: 120px; */
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	
+}
+
+.target-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    z-index: 13;
+    display:none;
+}
+
+.midset {
+    display: block;
+    padding: 0px 10px;
+    padding-top: 22px;
+}
+
+.clickableArea {
+       display: block;
+    height: 4px;
+    margin: 0px auto;
+    padding: 0px;
+    background-color: #cdcdcd;
+    position: relative;
+    cursor: crosshair;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: crosshair;
+    z-index: 11;
+    cursor: url(../images/pointer_v2.png) 19 19, crosshair;
+    z-index: 12;
+    box-sizing: content-box;
+    border-top: 200px solid transparent;
+    border-bottom: 20px solid #fff;
+    position: relative;
+}
+.bdr-clr {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 204px;
+    width: 706px;
+    /* background: #f00; */
+    /* z-index: 999; */
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+.clickableArea .knob {
+    width: 18px;
+    height: 18px;
+    z-index: 11;
+    position: absolute;
+    cursor: default;
+    background: url(../images/knob_icon.png) no-repeat;
+}
+.bdr-clr {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 204px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    /* background: #f00; */
+    /* z-index: 999; */
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+.bottomRightNegative {
+    position: absolute;
+    width: 180px;
+    bottom: 15px;
+    text-align: left;
+    left: 100%;
+    cursor: default;
+    color: #6c6c6c;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    user-select: none;
+}
+
+.BottomleftPosetive {
+    position: absolute;
+    width: 180px;
+    text-align: right;
+    bottom: 15px;
+    right: 100%;
+    cursor: default;
+    color: #6c6c6c;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    user-select: none;
+}
+
+.draggableArea {
+    display: block;
+    margin: 0px -10px;
+    position: relative;
+    z-index: 10;
+    height: 30px;
+}
+
+.borderBox {
+    top: 45px;
+}
+
+.countBox {
+    top: 5px;
+}
+
+.clearAll {
+    clear: both;
+}
+
+.knob .strRotate {
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    color: #6e2cdc;
+    font-size: 20px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.strRotate::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    background: #c5c5c5;
+    left: -8px;
+    width: 2px;
+    top: 4px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .toolWapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 572 12" style="enable-background:new 0 0 572 12;" xml:space="preserve">
+
+<style type="text/css">.st01{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}</style>
+
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="572" y2="6">
+	<stop  offset="0" style="stop-color:#82CC02"/>	<stop  offset="0.5" style="stop-color:#0F84D1"/>
+	<stop  offset="1" style="stop-color:#82CC02"/></linearGradient>
+	<polygon class="st01" points="570,0 570,5 2,5 2,0 0,0 0,5 0,7 0,12 2,12 2,7 570,7 570,12 572,12 572,7 572,5 572,0 "/>
+	
+	</svg>
+

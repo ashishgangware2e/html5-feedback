@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Timeline tool Analyzer</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=yes">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/moduleStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/speech_bubble.css" />
+<link rel="stylesheet" type="text/css" href="css/loginCss.css" />
+<!-- <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script> -->
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+	
+<script type="text/javascript">
+	var dragStatement="";
+	var precode="";
+	//use these variables only
+	var options = "Visit doctor|Confirmed diagnosis|First treatment|Ask friends/family|Initial symptoms|Event 6";
+	var opt0 = "25:25|Lorem ipsum dolor sit' amet, conse~65:62|ipiscing elit. Vivamus at lectus nibh. I";
+	var opt1 = "30:100|ctetur nulla eu r~75:65|n hendrerit urna ut elit condimentum sagittis. Fusce non ligula venenatis, luctus nulla sed, auctor nunc. Vestibulum in sodales diam. Vivamus gravida, nisl at fermentu";
+	var opt2 = "98:98|utrum nisi u~85:72|nisi lacinia m";
+	var opt3 = "98:20|us. Mauris velit tellu~95:42|is aliquam, ante arcu iaculis";
+	var opt4 = "40:70|auris velit tellus, semper at nisl ac, porttitor rutrum mauris. Nam pretium ante sed orci pretium facilisis. Cras rut~25:32|um risus arcu sit amet enim. Sed porta malesuada nisi, in suscipit nibh tincidunt vitae. In purus mi, aliquam vel mollis ac, placerat at tellus. Mauris velit tellus, semper ";
+	var opt5 = "50:60|nenatis ipsum, et ~35:12|uam, ante arcu ";
+	var opt6 = "60:50|ulum, dolor at rhoncus~45:92|t at tellus. Mauris ve";
+	var opt7 = "90:40| ipsum, et bibendum ri~55:32|entum nisl ";
+	
+	var selectedColor = "|#FFCFCF|#E6FBDB|#CFDAFF|#FFECCF|#FFF7CF|#FFCFFA";
+	var borderColor = '|#FF0B0B|#2ECB00|#0B23FF|#FFA60B|#FFCE0B|#DE0BFF';
+	var selectedChar = "V|C|F|A|I|6";
+
+	var emoImag = "images/7_emo.svg|images/6_emo.svg|images/5_emo.svg|images/4_emo.svg|images/3_emo.svg|images/2_emo.svg|images/1_emo.svg";
+
+	var NavBlocText = "All|Visit doctor|Confirmed diagnosis|First treatment|Ask friends/family|Initial symptoms|Event 6";
+	var textLetter ="|V|C|F|A|I|6"
+	
+	$(document).ready(function(){  
+	$(".contantBlock").show();	
+	//$("body").css("background","#44cdf8");	
+	
+	$('.login-btn').on('click', function() {
+	var VuserId = $("#userId").val();
+	var VpasswordId = $("#passwordId").val();
+	
+		if(VuserId=="Chris" && VpasswordId=="Admin"){
+			//window.location.href='analyzerTool.html';
+			$(".containmain").hide();
+			$(".contantBlock").show();
+			$("body").css("background","#FFF");
+		}
+		else{
+			$("#errorMsg").show();
+		}
+	
+	});	
+	
+	if ($('.topform').is(':empty')){
+	
+		$(".topform").focusout(function(){
+			imageUrl = 'http://www.flaticon.com/png/256/16612.png';
+			$(this).css('background-image', 'url(' + imageUrl + ')'); 
+		});
+		
+		} else if ($('.topform').not(':empty')){
+	
+		$(this).css('background-image', 'none'); 
+		
+	}
+});
+</script>
+<script type="text/javascript" src="js/analyzer_script.js"></script>
+</head>
+
+<body>
+
+	<div class="heading">Timeline Analyzer</div>
+	<div class="contantBlock">
+	<div class="left-nav">
+		<div class="blocking-area">
+		<div class="innr-area"></div>
+		<div class="right-line"></div>
+	</div>		
+		<div class="sliderBlock">Control Opacity<div class="opacityLow">Low</div><div id="slider"></div><div class="opacityHigh">High</div></div>
+	</div>
+	<div class="right-container">
+		<div class="emoticonsBlock"><ul></ul></div>
+  	<div class="dropContaner">
+	<div id="droppable" class="droppableArea">
+	<div class="innerdiv" id="chartcontainer"></div>
+		<div class="arrow-right"></div>
+		<div class="arrow-top"></div>
+		<div class="time">Time</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+</div>
+<style>
+
+</style>
+</body>
+</html>
+
+

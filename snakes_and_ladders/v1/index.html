@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snakes and Ladders</title>
+    <link href="css/sn-lddr.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/sn-lddr.js"></script>
+    <script>
+      var widgetTitle=" Regarding your chronic heart failure patients, would you say Feature 1 is  a snake (barrier) or a ladder (driver)? And would you say this is a very small or very large Please click on rating buttons below.|You can select only one| Data export will show the option and scale chosen for each";
+      function outputLadder(ladder){
+           $("#punchData").val(ladder);
+      }
+      function outputSnake(snake){
+            $("#punchData1").val(snake);
+      }
+      
+      </script>
+
+  </head>
+  <body>
+    <div class="snke-lddr-contnr"> </div>  
+    <input type="hidden" id="punchData" />
+    <input type="hidden" id="punchData1" />
+  </body>
+</html>
