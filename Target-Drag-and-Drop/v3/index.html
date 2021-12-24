@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Target-Drag and Drop</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/brandTrackingModule.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>   
+
+	<script>
+		var Brandtxt = "Brand one";
+		var drgAttr = "Statement 1|Statement 2|Statement 3|Statement 4|Statement 5|Statement 6|Statement 7|Statement 8|Statement 9|Statement 10"; 	//pass here you both text statement or image statement 
+		//var drgAttr = "images/img1.png|images/img2.png|images/img3.png|images/img4.png"; 
+		var bigImage="images/pro-img1_large.jpg|images/pro-img2_large.jpg|images/pro-img3_large.jpg|images/pro-img4_large.jpg|images/pro-img1_large.jpg|images/pro-img2_large.jpg|images/pro-img1_large.jpg|images/pro-img3_large.jpg|images/pro-img4_large.jpg|images/pro-img1_large.jpg";
+		var precode = "2|1|3|4|5|6|7|8|9|10";
+		var dropshowCode = "J|K|L|M";
+        var randomValue = 0;
+		var countdown = 20;
+		var Item = "Item";
+        var of="of";
+		var start = "Start";
+		var widgetTitle="Imagine clopidogrel is at the centre of this map. For each of the following statements, please indicate how closely they fit the brand by placing them on the map. The closer you put them to the centre of the circle, the closer you feel they fit that brand. drag on the map to place the first statement.|Drag the Statement on to the circle|Rating (circle level) for each statement will be shown in the data export" //Title Statement,input, output Statement Pass 
+		var countdownText="Countdown";	
+		var AllitemPlaced="All the items are placed"	
+        function outputValues(datas){
+            $("#outputs").val(datas);
+        }
+		
+		function showPopup(){
+			var elem="";
+			$(".profilePopup .imgBox").append(elem);
+			$(".profilePopup .imgBox").addClass("profiletable");
+		}
+	</script>
+</head>
+
+<body>
+
+<div class="wrapper row-of-icons"></div>
+
+<input type="text" class="" id="outputs" name="" style="width:80%; margin-top:20px;border:1px solid rgba(0, 0, 0, 0.27)"/>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>VideoRating Vertical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-slider-pips.min.css">
+    <link rel="stylesheet" type="text/css" href="css/videorating-vertical.css">
+    <script type="text/javascript" src="js/iphone-inline-video.browser.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-slider-pips.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/videorating-vertical.min.js"></script>
+
+    <script type="text/javascript">
+        var optionshow = true; //pass true for 7 option  and false for 3 option show
+        var defaultrate = 1;
+        var widget_title = "As the video plays, remember to react the whole time, rating each thing you see and hear";
+        var errorMsg = "Please view the video again and indicate your interest by clicking on the scale below";
+        var videoSource = "video/sample-video.mp4|video/sample-video.webm|video/sample-video.ogg";
+
+        function recordeddata(data) {
+            $("#outputData").val(data);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="video-container"> </div>
+    <input type="text" id="outputData" name="outputData" style="width: 90%;" />
+    <input type="text" id="EndData" name="EndData" style="width: 90%;" />
+    <input type="text" id="clickval" name="clickval" style="width: 90%;" />
+</body>
+
+</html>

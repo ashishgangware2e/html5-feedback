@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robot</title>
+    <link href="css/snowman-style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/snowman.js"></script>
+    <script>
+      var toolInfo =
+        "Now please think about using pill X. How would you summarise the more rational/logical reasons for using and also the less rational/emotional reasons for using it? Please use this simple image of a robot as a way to help you to think: Add the more rational/logical reasons for using next to the head of the robot. Add the less rational/emotional reasons for using next to the heart of the robot.|Provide your response in the boxes below|Data export will show the entire verbatim entered";
+      var questionText =
+        "What do you think ?|How do you feel?|What facts do you know ?|What things have you done?";
+        var preCode="1|2|4|3"
+
+        function outputVal(val1, val2, val3, val4){
+          $("#output1").val(val1)
+          $("#output2").val(val2)
+          $("#output3").val(val3)
+          $("#output4").val(val4)
+        }
+    </script>
+  </head>
+  <body>
+    <div class="snowman-container"></div>
+    <p class="error"></p>
+    <input id="output1" type="text" />
+    <input id="output2" type="text" />
+    <input id="output3" type="text" />
+    <input id="output4" type="text" />
+  </body>
+</html>

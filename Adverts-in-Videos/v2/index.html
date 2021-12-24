@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/videoModuel.css" />
+    <script src="js/adverts-videos.js"></script>
+    <script type="text/javascript">
+      var optionshow = true; //pass true for 7 option  and false for 3 option show
+      var defaultrate = 1;
+      var sourceVideos="video/sample-video.mp4|video/sample-video.webm|video/sample-video.ogg";// pass videos format .mp4 ,.webm,.ogg
+      var widgetTitle="We would now like you to listen to a radio advert from Invesco Perpetual. Please make sure your speakers are working."
+      function recoreddata(data) {
+        $("#outputData").val(data);
+      }
+      </script>
+  </head>
+  <body>
+   <div class="video-container-outer"></div>
+    <input type="hidden" id="outputData" name="outputData" style="width: 90%" />
+    <input type="hidden" id="EndData" name="EndData" style="width: 90%" />
+    <input type="hidden" id="clickval" name="clickval" style="width: 90%" />
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="327" height="451" viewBox="0 0 327 451">
+  <g id="robot" transform="translate(1)">
+    <rect id="Rectangle_169" data-name="Rectangle 169" width="31" height="31" transform="translate(124 31)" fill="#42424F"/>
+    <rect id="Rectangle_173" data-name="Rectangle 173" width="32" height="31" transform="translate(170 31)" fill="#42424F"/>
+    <rect id="Rectangle_174" data-name="Rectangle 174" width="78" height="16" transform="translate(124 93)" fill="#42424F"/>
+    <rect id="Rectangle_170" data-name="Rectangle 170" width="63" height="93" transform="translate(108 186)" fill="#42424F"/>
+    <rect id="Rectangle_175" data-name="Rectangle 175" width="31" height="16" transform="translate(186 186)" fill="#42424F"/>
+    <rect id="Rectangle_176" data-name="Rectangle 176" width="31" height="16" transform="translate(186 217)" fill="#42424F"/>
+    <rect id="Rectangle_177" data-name="Rectangle 177" width="31" height="16" transform="translate(186 248)" fill="#42424F"/>
+    <path id="Path_5878" data-name="Path 5878" d="M310,149.5V10H279V25.5H248V10H77.5V25.5h-31V10h-31V149.5H0l3.6,42.1,9,.8L15.5,165h31l3.3,26.6h9.8L62,149.5H46.5v-93h31V165H93V273.5l-27.667,2.333L62,304.5h93l-2.333-26.167L139.5,273.5V165H186V273.5l-11,4.833L170.5,304.5h93L259,278.333,232.5,273.5V165H248V56.5h31v93H263.5l1.7,42.7h11.2l.8-28.4L310,165l5.8,27.2,5.6-1,4.1-41.7ZM170.5,134h-62V41h62ZM186,41h31V56.5H186Zm0,31h31V87.5H186Zm0,31h31v15.5H186Z" transform="translate(0 145)" fill="#9D9EA0"/>
+    <path id="Path_5879" data-name="Path 5879" d="M34,64V2a31,31,0,0,0,0,62Z" transform="translate(43.5 29)" fill="#42424F"/>
+    <path id="Path_5880" data-name="Path 5880" d="M47,33A31.011,31.011,0,0,0,16,2V64A31,31,0,0,0,47,33Z" transform="translate(232 29)" fill="#42424F"/>
+    <path id="Path_5881" data-name="Path 5881" d="M145.5,0H6V139.5H145.5ZM37,31H68V62H37Zm77.5,77.5H37V93h77.5Zm0-46.5h-31V31h31Z" transform="translate(87)" fill="#9D9EA0"/>
+    <g id="Rectangle_171" data-name="Rectangle 171" transform="translate(62 418)" fill="#42424F" stroke="#42424F" stroke-width="1">
+      <path d="M5,0H88a5,5,0,0,1,5,5V33a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,.5H88A4.5,4.5,0,0,1,92.5,5V32a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,32V5A4.5,4.5,0,0,1,5,.5Z" fill="none"/>
+    </g>
+    <g id="Rectangle_172" data-name="Rectangle 172" transform="translate(171 418)" fill="#42424F" stroke="#42424F" stroke-width="1">
+      <path d="M5,0H88a5,5,0,0,1,5,5V33a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,.5H88A4.5,4.5,0,0,1,92.5,5V32a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,32V5A4.5,4.5,0,0,1,5,.5Z" fill="none"/>
+    </g>
+    <g id="hand">
+      <rect id="Rectangle_178" data-name="Rectangle 178" width="64" height="16" transform="translate(-1 294)" fill="#42424F"/>
+      <rect id="Rectangle_179" data-name="Rectangle 179" width="48" height="16" rx="8" transform="translate(15 294) rotate(90)" fill="#42424F"/>
+      <rect id="Rectangle_180" data-name="Rectangle 180" width="48" height="16" rx="8" transform="translate(63 294) rotate(90)" fill="#42424F"/>
+    </g>
+    <g id="hand-2" data-name="hand" transform="translate(263)">
+      <rect id="Rectangle_178-2" data-name="Rectangle 178" width="64" height="16" transform="translate(-1 294)" fill="#42424F"/>
+      <rect id="Rectangle_179-2" data-name="Rectangle 179" width="48" height="16" rx="8" transform="translate(15 294) rotate(90)" fill="#42424F"/>
+      <rect id="Rectangle_180-2" data-name="Rectangle 180" width="48" height="16" rx="8" transform="translate(63 294) rotate(90)" fill="#42424F"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vertical Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jqueryui.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui-slider-pips.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/vertical-slider.css">
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery-ui-slider-pips.min.js"></script>
+  <script src="js/vertical-slider.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+  <script>
+    function outputdata(data) {
+      $("#result").val(data)
+    }
+  </script>
+  <div class="title-toll">
+    Please indicate your annual income.
+  </div>
+  <div class="respondent-info ">The scale below represents the income in USD</div>
+  <div class="custom-wrapper-container">
+    <div class="vertical">
+      <div id="flat-slider-vertical-1"></div>
+    </div>
+  </div>
+  <div class="output-info"><b>Output</b>: Data export will show the income scale chosen</div>
+
+</body>
+
+</html>

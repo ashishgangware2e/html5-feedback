@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Archetypes</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link href="css/archetypes.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/archetypes.js"></script>
+
+    <script type="text/javascript">
+      var img_Str =
+        "images/the-explorer.png|images/the-lover.png|images/the-jester.png|images/the-creator.png|images/the-rebel.png|images/the-hero.png|images/the-ruler.png|images/the-magician.png|images/the-caregiver.png|images/the-sage.png|images/the-innocent.png|images/the-everyman.png";
+      var _precodes = "5|11|2|1|12|3|8|6|4|10|9|7";
+      var thumb_title =
+        "THE EXPLORER|THE LOVER|THE JESTER|THE CREATOR|THE REBEL|THE HERO|THE RULER|THE MAGICIAN|THE CAREGIVER|THE SAGE|THE INNOCENT|THE EVERYMAN";
+      var thumb_desc =
+        "Discover new things and independence|Love and be loved|Have fun (but convey a serious message)|Creative and innovate|Rebel and do something different|Brave and act courageously|Take control and create order out of chaos|Transform the situation|Provide care and stability (away from harm)|Feel goodness and happiness|Feel trust and optimism so life isn’t so hard|Feel connected to others and understood";
+      var single_Sel = "false";
+      var randomrotate_Str =
+        "image-rotate-five|image-rotate-four|image-rotate-three|image-rotate-five|image-rotate-four|image-rotate-three|image-rotate-five|image-rotate-four|image-rotate-three|image-rotate-five|image-rotate-four|image-rotate-three";
+      var widgetTitle =
+        "Think about the company Roche and pick the archetypes which you most associate with the company Roche|Select as many as you want.|It will show the list of all options selected";
+      function outputValue(data) {
+        $("#output").val(data);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container container-lg clearALL archetypes"></div>
+    <input type="hidden" id="output" name="output" />
+  </body>
+</html>
