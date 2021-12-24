@@ -18,4 +18,4 @@
 | 14|XYrating  | 1. In IE browser it is not working properly and formatting is also not fine. Please check. |   	|   |   |   |   |   |   |
 
 
-<file-name>-Copy ==> Backup of that version
+(file-name)-Copy ==> Backup of that version
