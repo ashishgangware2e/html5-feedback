@@ -938,6 +938,13 @@ table tr:nth-child(even) td:nth-child(even) {
   .BottomleftPosetive {
     width: 444px;
   }
+  .toolWapper .toTarget{
+    width: 50%;
+  }
+  .toolWapper{
+    width: 55%;
+
+  }
 }
 
 
